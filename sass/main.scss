@@ -1,12 +1,15 @@
 // import Utils: variables => fonctions => mixins => placeholder
 @import "./Utils/variables";
+@import "./Utils/mixins";
 // import Base
 @import "./Base/anchor";
 @import "./Base/fonts";
-@import "./Base/margin";
+@import "./Base/global";
 
 // Import Composants
+@import "./Composants/cursive-title";
 // Import Layout
+@import "./Layout/header";
 @import "./Layout/footer";
 
 // Import Pages
