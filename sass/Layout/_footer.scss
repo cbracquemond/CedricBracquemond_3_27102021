@@ -2,7 +2,6 @@
     @include flex-column;
     padding: 16px;
     background-color: $color-footer;
-    color: white;
     width: 100%;
     &__title {
         font-family: 'Shrikhand', cursive;
@@ -12,7 +11,6 @@
         list-style: none;
     }
     &__link {
-        color: white;
         margin-bottom: 5px;
     }
     & .fas {
@@ -22,5 +20,8 @@
         font-size: 11px;
         margin-right: 5px;
         width: 14px;
+    }
+    & *{
+        color: white;
     }
 }

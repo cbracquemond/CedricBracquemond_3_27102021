@@ -1,0 +1,10 @@
+.explore{
+    @include flex-center-column;
+    background-color: $color-explore;
+    align-content: center;
+    text-align: center;
+    padding: 40px 0 50px;
+    & p{
+        margin: 16px;
+    }
+}

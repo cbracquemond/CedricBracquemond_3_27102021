@@ -1,0 +1,21 @@
+.header{
+    @include flex-center-column;
+    &__location{
+        @include flex-center;
+        background-color: $color-location;
+        color: black;
+        width: 100%;
+        padding: 16px;
+        font-weight: bold;
+    }
+    &__title{
+        @include shadow;
+        width: 100%;
+    }
+    & a{
+        @include flex-center;
+    }
+    & .fas{
+        margin-right: 16px;
+    }
+}

@@ -3,13 +3,16 @@
 @import "./Utils/mixins";
 // import Base
 @import "./Base/anchor";
+@import "./Base/title";
 @import "./Base/fonts";
 @import "./Base/global";
 
 // Import Composants
 @import "./Composants/cursive-title";
+@import "./Composants/button";
 // Import Layout
 @import "./Layout/header";
 @import "./Layout/footer";
 
 // Import Pages
+@import "./Pages/index__explore";
