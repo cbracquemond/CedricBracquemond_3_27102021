@@ -21,8 +21,10 @@ h1 {
   font-size: 32px;
 }
 
-.button {
+.gradient-button {
   all: unset;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   color: white;
   background: #9356DC;
   background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
@@ -65,8 +67,8 @@ h1 {
 }
 
 .header__title {
-  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   width: 100%;
 }
 
@@ -155,5 +157,78 @@ h1 {
 
 .explore p {
   margin: 16px;
+}
+
+.process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 16px;
+}
+
+.process__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 16px;
+}
+
+.process__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  height: 34px;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.process__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 19.33px;
+  max-height: 19.33px;
+}
+
+.process__stage {
+  text-align: center;
+}
+
+.process .fas {
+  color: #7e7e7e;
+}
+
+.process h2 {
+  margin: 24px 0;
 }
 /*# sourceMappingURL=main.css.map */

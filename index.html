@@ -4,8 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="public/css/main.css ">
-		<script src="https://kit.fontawesome.com/9bf81610db.js" crossorigin="anonymous"></script>
 		<title>Ohmyfood! Accueil</title>
 	</head>
 	<body>
@@ -22,24 +20,30 @@
 			<section class="explore">
 				<h1>Réservez le menu qui vous convient</h1>
 				<p>Découvrez des restaurant d'exception, sélectionnés par nos soins.</p>
-				<button class="button">Explorez nos restaurants</button>
+				<button class="gradient-step">Explorez nos restaurants</button>
 			</section>
-			<section>
+			<section class="process">
 				<h2>Fonctionnement</h2>
-				<div>
-					<p>1</p>
-					<i class="fas fa-mobile-alt"></i>
-					<p>Choisissez un restaurant</p>
+				<div class="process__step">
+					<span class="process__number">1</span>
+					<div class="process__border">
+						<i class="fas fa-mobile-alt"></i>
+						<p class="process__stage">Choisissez un restaurant</p>
+					</div>
 				</div>
-				<div>
-					<p>2</p>
-					<i class="fas fa-bars"></i>
-					<p>Composez votre menu</p>
+				<div class="process__step">
+					<span class="process__number">2</span>
+					<div class="process__border">
+						<i class="fas fa-bars"></i>
+						<p class="process__stage">Composez votre menu</p>
+					</div>
 				</div>
-				<div>
-					<p>3</p>
-					<i class="fas fa-store"></i>
-					<p>Dégustez au restaurant</p>
+				<div class="process__step">
+					<span class="process__number">3</span>
+					<div class="process__border">
+						<i class="fas fa-store"></i>
+						<p class="process__stage">Dégustez au restaurant</p>
+					</div>
 				</div>
 			</section>
 			<section>
@@ -103,5 +107,7 @@
 			<a class="footer__link" href="#">Mentions légales</a> 
 			<a class="footer__link" href="mailto:#">Contact</a>
 		</footer>
+		<link rel="stylesheet" href="public/css/main.css ">
+		<script src="https://kit.fontawesome.com/9bf81610db.js" crossorigin="anonymous"></script>
     </body>
 </html>
