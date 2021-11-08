@@ -1,7 +1,7 @@
 .process{
     @include flex-column;
     padding-left: 16px;
-    &__button{
+    &__step{
         @include flex-center;
         width: fit-content;
         margin-bottom: 16px;
