@@ -2,10 +2,8 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
 // import Base
-@import "./Base/anchor";
-@import "./Base/title";
-@import "./Base/fonts";
-@import "./Base/global";
+@import "./Base/typo";
+@import "./Base/reset";
 // Import Composants
 @import "./Composants/cursive-title";
 @import "./Composants/gradient-button";

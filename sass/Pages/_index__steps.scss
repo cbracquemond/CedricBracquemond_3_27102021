@@ -1,34 +1,56 @@
 .process{
+    counter-reset: step;
+    padding: 0 $base-scale;
     @include flex-column;
-    padding-left: 16px;
-    &__step{
-        @include flex-center;
-        width: fit-content;
-        margin-bottom: 16px;
+    &__box{
+        margin-bottom: $base-scale;
+        padding-left: $base-scale;
+        gap: 2*$base-scale;
+        @include flex-column;
+        @include media(tablet-portrait) {
+            flex-direction: row;
+        }
     }
     &__border{
-        @include flex-center;
+        position: relative;
         background-color: $color-explore;
-        height: 34px;
-        border-radius: 15px;
-        font-weight: bold;
-        padding: 15px;
-    }
-    &__number{
-        @include flex-center;
-        background-color: $color-primary;
-        color: white;
-        border-radius: 50%;
-        width: 19.33px;
-        max-height: 19.33px;
+        height: 4*$base-scale;
+        width: 100%;
+        border-radius: $base-scale;
+        padding: $base-scale;
+        display: flex;
+        align-items: center;
+        @include shadow;
+        @include hover-grow{
+            background-color: scale-color($color-primary, $lightness:85%);
+        }
+        &:hover .fas{
+            color: $color-primary;
+        }
+        &::before{
+            position: absolute;
+            font-size: $base-scale;
+            left: -1*$base-scale;
+            width: 1.5*$base-scale;
+            height: 1.5*$base-scale;
+            content: counter(step);
+            counter-increment: step;
+            color: white;
+            background-color: $color-primary;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__stage{
-        text-align: center;
+        font-weight: bold;
     }
     & .fas{
         color: $color-icons;
+        margin: 0 $base-scale;
     }
     & h2{
-        margin: 24px 0;
+        margin: 1.5*$base-scale 0;
     }
 }

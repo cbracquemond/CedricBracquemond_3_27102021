@@ -5,17 +5,19 @@
         background-color: $color-location;
         color: black;
         width: 100%;
-        padding: 16px;
+        padding: $base-scale;
         font-weight: bold;
     }
     &__title{
-        @include shadow;
-        width: 100%;
-    }
-    & a{
         @include flex-center;
+        @include shadow;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        
     }
+
     & .fas{
-        margin-right: 16px;
+        margin-right: $base-scale;
     }
 }

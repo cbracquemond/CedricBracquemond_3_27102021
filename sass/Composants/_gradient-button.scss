@@ -5,6 +5,7 @@
     background: #9356DC;
     background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
     cursor: pointer;
-    border-radius: 27px;
-    padding: 16px;
+    border-radius: 2*$base-scale;
+    padding: $base-scale;
+    @include hover-grow;
 }
