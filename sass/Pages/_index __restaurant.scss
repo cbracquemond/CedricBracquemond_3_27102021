@@ -1,0 +1,18 @@
+.restaurant{
+    background-color: $color-background;
+    padding: 0 $base-scale;
+    &__box{
+        width: 100%;
+        display: grid;
+        gap: $base-scale;
+        @include media(tablet-landscape){
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
+        }
+    }
+    & h2{
+        padding-top: 2*$base-scale;
+    }
+}

@@ -4,6 +4,11 @@ h1 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
 * {
   margin: 0px;
   -webkit-box-sizing: border-box;
@@ -34,10 +39,70 @@ a {
 }
 
 .gradient-button:hover {
-  -webkit-transition: all 100ms;
-  transition: all 100ms;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 1px 8px -3px #000;
+          box-shadow: 2px 1px 8px -3px #000;
+}
+
+.card:hover {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.card__container {
+  position: relative;
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 11rem;
+  height: 11rem;
+}
+
+.card__img {
+  min-height: 11rem;
+  width: 100%;
+}
+
+.card__new {
+  position: absolute;
+  font-weight: bold;
+  background-color: #99E2D0;
+  color: #0a8d6d;
+  padding: 0.5rem 1rem;
+  right: 0px;
+  z-index: 10;
+  margin: 1rem 1rem 0 0;
+}
+
+.card__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.card .far {
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 100;
 }
 
 .header {
@@ -213,8 +278,8 @@ a {
 }
 
 .process__border:hover {
-  -webkit-transition: all 100ms;
-  transition: all 100ms;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   background-color: #efe6fa;
@@ -257,5 +322,32 @@ a {
 
 .process h2 {
   margin: 1.5rem 0;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  padding: 0 1rem;
+}
+
+.restaurant__box {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .restaurant__box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+.restaurant h2 {
+  padding-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

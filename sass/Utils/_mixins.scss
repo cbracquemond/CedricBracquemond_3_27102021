@@ -18,6 +18,8 @@
 @mixin media($size) {
     @if $size == phone-only {
       @media (max-width: 599px) { @content; }
+    } @else if $size == small-phone {
+      @media (max-width: 390px) { @content; }
     } @else if $size == tablet-portrait {
       @media (min-width: 600px) { @content; }
     } @else if $size == tablet-landscape {
@@ -35,7 +37,7 @@
 
 @mixin hover-grow {
     &:hover{
-        transition: all 100ms;
+        transition: all 200ms;
         transform: scale(1.02);
         @content; 
     }
