@@ -20,6 +20,7 @@
         padding: $base-scale;
         display: flex;
         align-items: center;
+        cursor: pointer;
         @include shadow;
         @include hover-grow{
             background-color: scale-color($color-primary, $lightness:85%);

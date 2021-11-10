@@ -1,6 +1,6 @@
 .restaurant{
     background-color: $color-background;
-    padding: 0 $base-scale;
+    padding: 3*$base-scale $base-scale;
     &__box{
         width: 100%;
         display: grid;
@@ -11,8 +11,5 @@
             grid-column-gap: 16px;
             grid-row-gap: 16px;
         }
-    }
-    & h2{
-        padding-top: 2*$base-scale;
     }
 }
