@@ -9,23 +9,13 @@
         border-radius: 16px 16px 0 0;
         width: 100%;
         overflow: hidden;
-        object-fit: cover;
         min-height: 11*$base-scale;
         height: 11*$base-scale;
     }
     &__img{
+        object-fit: cover;
         min-height: 11*$base-scale;
         width: 100%;
-    }
-    &__new{
-        position: absolute;
-        font-weight: bold;
-        background-color: $color-tertiary;
-        color: $color-new;
-        padding: 0.5*$base-scale $base-scale;
-        right: 0px;
-        z-index: 10;
-        margin: $base-scale $base-scale 0 0;
     }
     &__description{
         display: flex;

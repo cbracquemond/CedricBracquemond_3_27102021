@@ -77,26 +77,15 @@ a {
   border-radius: 16px 16px 0 0;
   width: 100%;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
   min-height: 11rem;
   height: 11rem;
 }
 
 .card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 11rem;
   width: 100%;
-}
-
-.card__new {
-  position: absolute;
-  font-weight: bold;
-  background-color: #99E2D0;
-  color: #0a8d6d;
-  padding: 0.5rem 1rem;
-  right: 0px;
-  z-index: 10;
-  margin: 1rem 1rem 0 0;
 }
 
 .card__description {
@@ -115,6 +104,22 @@ a {
       -ms-grid-row-align: center;
       align-self: center;
   font-weight: 100;
+}
+
+.new {
+  position: relative;
+}
+
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  font-weight: bold;
+  background-color: #99E2D0;
+  color: #0a8d6d;
+  padding: 0.5rem 1rem;
+  right: 0px;
+  z-index: 10;
+  margin: 1rem 1rem 0 0;
 }
 
 .header {

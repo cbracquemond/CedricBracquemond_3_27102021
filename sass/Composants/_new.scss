@@ -1,0 +1,14 @@
+.new{
+    position: relative;
+}
+.new::before{
+    content: "Nouveau";
+    position: absolute;
+    font-weight: bold;
+    background-color: $color-tertiary;
+    color: $color-new;
+    padding: 0.5*$base-scale $base-scale;
+    right: 0px;
+    z-index: 10;
+    margin: $base-scale $base-scale 0 0;
+}
