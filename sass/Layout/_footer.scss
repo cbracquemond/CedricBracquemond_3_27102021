@@ -1,8 +1,15 @@
 .footer{
-    @include flex-column;
     padding: $base-scale;
     background-color: $color-footer;
     width: 100%;
+    @include flex-column;
+    &__box {
+        @include flex-column;
+        @include media(tablet-portrait){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
     &__title {
         font-family: 'Shrikhand', cursive;
         margin-bottom: $base-scale;
