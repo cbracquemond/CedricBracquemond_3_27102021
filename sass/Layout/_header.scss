@@ -1,23 +1,10 @@
 .header{
-    @include flex-center-column;
-    &__location{
-        @include flex-center;
-        background-color: $color-location;
-        color: black;
-        width: 100%;
-        padding: $base-scale;
-        font-weight: bold;
-    }
+    @include flex-center;
     &__title{
-        @include flex-center;
+        text-align: center;
         @include shadow;
         position: relative;
         z-index: 10;
         width: 100%;
-        
-    }
-
-    & .fas{
-        margin-right: $base-scale;
     }
 }

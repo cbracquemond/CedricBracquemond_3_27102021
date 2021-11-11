@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+* {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursive {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.5rem;
+}
+
+.cursive--ohmyfood {
+  font-size: 2rem;
+}
+
+.gradient-button {
+  all: unset;
+  color: white;
+  background: #9356DC;
+  background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 1rem 3.5rem;
+  -webkit-box-shadow: 2px 1px 8px -3px #000;
+          box-shadow: 2px 1px 8px -3px #000;
+}
+
+.gradient-button:hover {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.gradient-button--menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem auto;
+  width: auto;
+}
+
+.arrow {
+  position: absolute;
+  left: 1rem;
+}
+
+.course {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
+}
+
+.course__dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.course__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course__price {
+  font-weight: bold;
+}
+
+.picture {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  text-align: center;
+  -webkit-box-shadow: 2px 1px 8px -3px #000;
+          box-shadow: 2px 1px 8px -3px #000;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.menu {
+  padding: 0 1rem;
+  background-color: #F6F6F6;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: -5px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__courses-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
+}
+
+.menu__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  background-color: #353535;
+  width: 100%;
+}
+
+.footer__title {
+  font-family: 'Shrikhand', cursive;
+  margin-bottom: 1rem;
+}
+
+.footer__link {
+  margin-bottom: 5px;
+}
+
+.footer .fas {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin-right: 5px;
+  width: 1rem;
+}
+
+.footer * {
+  color: white;
+}
+/*# sourceMappingURL=restaurants.css.map */

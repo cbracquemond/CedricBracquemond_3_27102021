@@ -23,19 +23,23 @@ a {
 
 .cursive {
   font-family: 'Shrikhand', cursive;
+  font-size: 1.5rem;
+}
+
+.cursive--ohmyfood {
   font-size: 2rem;
 }
 
 .gradient-button {
   all: unset;
-  -webkit-box-shadow: 2px 1px 8px -3px #000;
-          box-shadow: 2px 1px 8px -3px #000;
   color: white;
   background: #9356DC;
   background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
   cursor: pointer;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 1rem 3.5rem;
+  -webkit-box-shadow: 2px 1px 8px -3px #000;
+          box-shadow: 2px 1px 8px -3px #000;
 }
 
 .gradient-button:hover {
@@ -43,6 +47,14 @@ a {
   transition: all 200ms;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.gradient-button--menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem auto;
+  width: auto;
 }
 
 .card {
@@ -115,48 +127,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.header__location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #EAEAEA;
-  color: black;
-  width: 100%;
-  padding: 1rem;
-  font-weight: bold;
 }
 
 .header__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   -webkit-box-shadow: 2px 1px 8px -3px #000;
           box-shadow: 2px 1px 8px -3px #000;
   position: relative;
   z-index: 10;
   width: 100%;
-}
-
-.header .fas {
-  margin-right: 1rem;
 }
 
 .footer {
@@ -219,11 +198,32 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  padding: 40px 0 50px;
+  padding-bottom: 3.125rem;
+}
+
+.explore__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEAEA;
+  color: black;
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
 }
 
 .explore p {
-  margin: 16px;
+  margin: 1rem;
+}
+
+.explore h1 {
+  margin-top: 40px;
 }
 
 .process {

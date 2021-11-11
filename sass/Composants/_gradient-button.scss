@@ -1,11 +1,17 @@
 .gradient-button{
     all:unset;
-    @include shadow;
     color: white;
     background: #9356DC;
     background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
     cursor: pointer;
     border-radius: 2*$base-scale;
-    padding: $base-scale;
+    padding: $base-scale 3.5*$base-scale;
+    @include shadow;
     @include hover-grow;
+    &--menu{
+        justify-content: center;
+        margin: 4*$base-scale auto;
+        width: auto;
+    }
+
 }
