@@ -6,7 +6,7 @@
     position: absolute;
     font-weight: bold;
     background-color: $color-tertiary;
-    color: $color-new;
+    color: scale-color($color-tertiary, $saturation: 0%, $lightness: -64%, $alpha: 1.0);
     padding: 0.5*$base-scale $base-scale;
     right: 0px;
     z-index: 10;

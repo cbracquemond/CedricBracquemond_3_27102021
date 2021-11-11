@@ -18,13 +18,9 @@
         width: 100%;
     }
     &__description{
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        position: relative;
         padding: $base-scale
-    }
-    & .far{
-        font-size: 2*$base-scale;
-        align-self: center;
-        font-weight: 100;
     }
 }

@@ -1,0 +1,13 @@
+.fa-heart{
+    position: absolute;
+    right: 2*$base-scale;
+    font-size: 2*$base-scale;
+    &--index{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.fas{
+    color: rgb(255,121,218);
+    color: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+}
