@@ -7,7 +7,7 @@
     border-radius: 2*$base-scale;
     padding: $base-scale 3.5*$base-scale;
     @include shadow;
-    @include hover-grow;
+    @include hover-effect;
     &--menu{
         justify-content: center;
         margin: 4*$base-scale auto;

@@ -31,14 +31,26 @@
     }
   }
 
-@mixin shadow {
-    box-shadow: 2px 1px 8px -3px #000; 
+@mixin shadow($color:#000, $spread:-3px) {
+    box-shadow: 2px 1px 8px $spread $color; 
 }
 
-@mixin hover-grow {
+@mixin hover-effect {
     &:hover{
+        @include shadow($color-primary,3px);
         transition: all 200ms;
         transform: scale(1.02);
         @content; 
+    }
+}
+
+@mixin hover-heart { 
+    &:hover .fas{
+      transition: 750ms;
+      opacity: 1;
+    }
+    &:hover .far{
+      transition: 750ms;
+      opacity: 0;
     }
 }

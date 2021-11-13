@@ -1,6 +1,6 @@
-.header{
+header{
     @include flex-center;
-    &__title{
+    .title{
         text-align: center;
         @include shadow;
         position: relative;

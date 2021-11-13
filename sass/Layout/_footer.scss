@@ -1,32 +1,27 @@
-.footer{
+footer{
     padding: $base-scale;
     background-color: $color-footer;
     width: 100%;
     @include flex-column;
-    &__box {
+    & *{
+        color: white;
+        display: inline-flex;
+    }
+.footer-box {
         @include flex-column;
         @include media(tablet-portrait){
             flex-direction: row;
             justify-content: space-between;
         }
-    }
-    &__title {
-        font-family: 'Shrikhand', cursive;
-        margin-bottom: $base-scale;
-        font-size: $base-scale;
-    }
-    &__link {
-        margin-bottom: 5px;
-    }
-    & .fas {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: $base-scale;
-        margin-right: 5px;
-        width: $base-scale;
-    }
-    & *{
-        color: white;
+        &__link {
+            margin-bottom: 5px;
+        }
+        & .fas {
+            flex-direction: row;
+            justify-content: center;
+            font-size: $base-scale;
+            margin-right: 5px;
+            width: $base-scale;
+        }
     }
 }

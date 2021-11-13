@@ -1,6 +1,10 @@
 .cursive{
     font-family: 'Shrikhand', cursive;
     font-size: 1.5*$base-scale;
+    &--footer{
+        font-size: $base-scale;
+        margin-bottom: $base-scale;
+    }
     &--ohmyfood{
         font-size: 2*$base-scale;
     }

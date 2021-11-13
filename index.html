@@ -7,10 +7,8 @@
 		<title>Ohmyfood! Accueil</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__title">
-				<a href="index.html" class="cursive cursive--ohmyfood">ohmyfood</a>
-			</div>
+		<header>
+			<a href="index.html" class="title cursive cursive--ohmyfood">ohmyfood</a>
 		</header>
 		<main>
 			<section class="explore">
@@ -44,7 +42,7 @@
 				<div class="restaurant__box">
 					<a href="./paletteGout.html" class="card">
 						<div class="card__container new">
-							<img class="card__img"
+							<img 
 								src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
 								alt="Photo de plat dans un restaurant"
 							/>
@@ -54,13 +52,15 @@
 								<h3>La palette du goût</h3>
 								<p>Ménilmontant</p>
 							</div>
-							<i class="far fa-heart fa-heart--index"></i>
-							<i class="fas fa-heart fa-heart--index"></i>
+							<div class="heart">
+								<i class="far fa-heart fa-heart"></i>
+								<i class="fas fa-heart fa-heart"></i>
+							</div>
 						</div>
 					</a>
 					<a href="./noteEnchantée.html" class="card">
 						<div class="card__container new">
-							<img class="card__img card__img--exception"
+							<img 
 								src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
 								alt="Photo de plat dans un restaurant"
 							/>
@@ -70,13 +70,15 @@
 								<h3>La note enchantée</h3>
 								<p>Charonne</p>
 							</div>
-							<i class="far fa-heart fa-heart--index"></i>
-							<i class="fas fa-heart fa-heart--index"></i>
+							<div class="heart">
+								<i class="far fa-heart fa-heart"></i>
+								<i class="fas fa-heart fa-heart"></i>
+							</div>
 						</div>
 					</a>
 					<a href="./française.html" class="card">
 						<div class="card__container">
-							<img class="card__img"
+							<img 
 								src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
 								alt="Photo de plat dans un restaurant"
 							/>
@@ -86,13 +88,15 @@
 								<h3>À la française</h3>
 								<p>Cité Rouge</p>
 							</div>
-							<i class="far fa-heart fa-heart--index"></i>
-							<i class="fas fa-heart fa-heart--index"></i>
+							<div class="heart">
+								<i class="far fa-heart fa-heart "></i>
+								<i class="fas fa-heart fa-heart "></i>
+							</div>
 						</div>
 					</a>
 					<a href="./deliceSens.html" class="card">
 						<div class="card__container">
-							<img class="card__img"
+							<img 
 								src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
 								alt="Photo de plat dans un restaurant"
 							/>
@@ -102,24 +106,26 @@
 								<h3>Le délice des sens</h3>
 								<p>Folie-Méricourt</p>
 							</div>
-							<i class="far fa-heart fa-heart--index"></i>
-							<i class="fas fa-heart fa-heart--index"></i>
+							<div class="heart">
+								<i class="far fa-heart fa-heart "></i>
+								<i class="fas fa-heart fa-heart "></i>
+							</div>
 						</div>
 					</a>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<h2 class="footer__title">ohmyfood</h2>
-			<div class="footer__box">
-				<a class="footer__link" href="#"
+		<footer>
+			<h2 class="cursive cursive--footer">ohmyfood</h2>
+			<div class="footer-box">
+				<a class="footer-box__link" href="#"
 					><span><i class="fas fa-utensils"></i>Proposer un restaurant</span></a
 				>
-				<a class="footer__link" href="#"
+				<a class="footer-box__link" href="#"
 					><span><i class="fas fa-hands-helping"></i>Devenir partenaire</span></a
 				>
-				<a class="footer__link" href="#">Mentions légales</a>
-				<a class="footer__link" href="mailto:#">Contact</a>
+				<a class="footer-box__link" href="#">Mentions légales</a>
+				<a class="footer-box__link" href="mailto:#">Contact</a>
 			</div>
 		</footer>
 		<link rel="stylesheet" href="public/css/main.css " />

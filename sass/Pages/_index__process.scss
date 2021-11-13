@@ -22,7 +22,7 @@
         align-items: center;
         cursor: pointer;
         @include shadow;
-        @include hover-grow{
+        @include hover-effect{
             background-color: scale-color($color-primary, $lightness:85%);
         }
         &:hover .fas{
@@ -30,7 +30,6 @@
         }
         &::before{
             position: absolute;
-            font-size: $base-scale;
             left: -1*$base-scale;
             width: 1.5*$base-scale;
             height: 1.5*$base-scale;

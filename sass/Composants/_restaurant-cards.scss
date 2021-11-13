@@ -3,7 +3,7 @@
     background-color: white;
     border-radius: 16px;
     @include shadow;
-    @include hover-grow;
+    @include hover-effect;
     &__container{
         position: relative;
         border-radius: 16px 16px 0 0;
@@ -12,14 +12,14 @@
         min-height: 11*$base-scale;
         height: 11*$base-scale;
     }
-    &__img{
+    img{
         object-fit: cover;
         min-height: 11*$base-scale;
         width: 100%;
     }
     &__description{
-        // display: flex;
-        // justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
         position: relative;
         padding: $base-scale
     }
