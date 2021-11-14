@@ -237,6 +237,30 @@ footer .footer-box__link {
   margin-bottom: 5px;
 }
 
+footer .footer-box__link--utensils::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  width: 1.5rem;
+}
+
+footer .footer-box__link--hand::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  width: 1.5rem;
+}
+
 footer .footer-box .fas {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -286,6 +310,18 @@ footer .footer-box .fas {
   width: 100%;
   padding: 1rem;
   font-weight: bold;
+}
+
+.explore__location p::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin-right: 1rem;
 }
 
 .explore p {
@@ -355,10 +391,10 @@ footer .footer-box .fas {
   transition: all 200ms;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  background-color: #efe6fa;
+  background-color: #fbfbfb;
 }
 
-.process__border:hover .fas {
+.process__border:hover .process__stage--mobile::before, .process__border:hover .process__stage--bars::before, .process__border:hover .process__stage--store::before {
   color: #9356DC;
 }
 
@@ -387,7 +423,41 @@ footer .footer-box .fas {
   font-weight: bold;
 }
 
-.process .fas {
+.process__stage--mobile::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #7e7e7e;
+  margin: 0 1rem;
+}
+
+.process__stage--bars::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #7e7e7e;
+  margin: 0 1rem;
+}
+
+.process__stage--store::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
   color: #7e7e7e;
   margin: 0 1rem;
 }

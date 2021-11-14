@@ -11,6 +11,11 @@
         width: 100%;
         padding: $base-scale;
         font-weight: bold;
+        & p::before{
+            @include font-awesome(900, "\f3c5"){
+                margin-right: $base-scale;
+            }
+        }
     }
     & p{
         margin: $base-scale;

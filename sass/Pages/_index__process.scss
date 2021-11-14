@@ -23,9 +23,9 @@
         cursor: pointer;
         @include shadow;
         @include hover-effect{
-            background-color: scale-color($color-primary, $lightness:85%);
+            background-color: scale-color($color-background, $lightness:50%);
         }
-        &:hover .fas{
+        &:hover .process__stage--mobile::before, &:hover .process__stage--bars::before, &:hover .process__stage--store::before{
             color: $color-primary;
         }
         &::before{
@@ -45,10 +45,21 @@
     }
     &__stage{
         font-weight: bold;
-    }
-    & .fas{
-        color: $color-icons;
-        margin: 0 $base-scale;
+        &--mobile::before{
+            @include font-awesome (900, "\f3cd"){
+                @include process-icons;
+            }
+        }
+        &--bars::before{
+            @include font-awesome (900,"\f0c9"){
+                @include process-icons;
+            }
+        }
+        &--store::before{
+            @include font-awesome (900, "\f54e"){
+                @include process-icons;
+            }
+        }
     }
     & h2{
         margin: 1.5*$base-scale 0;
