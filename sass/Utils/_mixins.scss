@@ -44,13 +44,15 @@
     }
 }
 
-@mixin hover-heart { 
-    &:hover .fas{
-      transition: 750ms;
-      opacity: 1;
-    }
-    &:hover .far{
-      transition: 750ms;
-      opacity: 0;
-    }
+@mixin font-awesome ($weight, $unicode) {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: $weight;
+    content: $unicode;
+    @content;
+
 }

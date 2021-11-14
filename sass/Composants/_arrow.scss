@@ -1,4 +1,8 @@
 .arrow{
     position: absolute;
     left: $base-scale;
+    transition: 200ms;
+    &:hover .fas{
+        color: $color-primary;
+    }
 }
