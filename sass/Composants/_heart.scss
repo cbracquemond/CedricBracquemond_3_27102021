@@ -1,22 +1,29 @@
-.heart{
-    position: relative;
-    margin-right: $base-scale;
-    cursor: pointer;
-    &:hover .fas{
+.heart {
+	position: relative;
+	&::before {
+		@include font-awesome(900, "\f004") {
+			opacity: 0;
+			color: transparent;
+			background-image: linear-gradient(
+				0deg,
+				rgba(255, 121, 218, 1) 0%,
+				rgba(147, 86, 220, 1) 100%
+			);
+			-webkit-background-clip: text;
+			background-clip: text;
+			@include heart-values;
+		}
+	}
+	&:hover::before {
 		opacity: 1;
 		transform: scale(1.1);
 	}
+	&:hover .fa-heart{
+		opacity: 0;
+	}
 }
-.fa-heart{
-    font-size: 2*$base-scale;
+.fa-heart {
+	@include heart-values;
+
 }
-.fas.fa-heart{
-    position: absolute;
-    left: 0px;
-    opacity: 0;
-    color: transparent;
-    background-image: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-	transition: 750ms;
-}
+

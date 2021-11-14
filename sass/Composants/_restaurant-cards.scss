@@ -20,7 +20,7 @@
     &__description{
         display: flex;
         justify-content: space-between;
-        position: relative;
+        align-content: center;
         padding: $base-scale;
     }
 }
