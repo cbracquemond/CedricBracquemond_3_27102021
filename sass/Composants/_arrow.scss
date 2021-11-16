@@ -2,8 +2,4 @@
     position: absolute;
     left: $base-scale;
     transition: 200ms;
-    &::before{
-        @include font-awesome (900, "\f060"){
-        }
-    }
 }

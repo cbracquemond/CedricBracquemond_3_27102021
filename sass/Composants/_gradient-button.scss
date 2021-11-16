@@ -5,7 +5,7 @@
     background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
     cursor: pointer;
     border-radius: 2*$base-scale;
-    padding: $base-scale 3.5*$base-scale;
+    padding: $base-scale 1.5*$base-scale;
     @include shadow;
     @include hover-effect;
     &--menu{

@@ -1,6 +1,6 @@
 .process{
     counter-reset: step;
-    padding: 0 $base-scale;
+    padding: 1.25*$base-scale $base-scale 2.75*$base-scale;
     @include flex-column;
     &__box{
         margin-bottom: $base-scale;
@@ -30,6 +30,7 @@
         }
         &::before{
             position: absolute;
+            font-size: 0.8*$base-scale;
             left: -1*$base-scale;
             width: 1.5*$base-scale;
             height: 1.5*$base-scale;

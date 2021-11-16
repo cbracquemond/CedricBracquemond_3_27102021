@@ -1,10 +1,8 @@
 header{
+    width: 100%;
+    padding: $base-scale 0 0.5*$base-scale;
+    position: relative;
+    z-index: 10;
     @include flex-center;
-    .cursive{
-        text-align: center;
-        @include shadow;
-        position: relative;
-        z-index: 10;
-        width: 100%;
-    }
+    @include shadow;
 }

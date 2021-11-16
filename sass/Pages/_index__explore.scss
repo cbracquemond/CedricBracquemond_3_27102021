@@ -9,7 +9,7 @@
         background-color: $color-location;
         color: black;
         width: 100%;
-        padding: $base-scale;
+        padding: 0.15*$base-scale;
         font-weight: bold;
         & p::before{
             @include font-awesome(900, "\f3c5"){

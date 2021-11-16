@@ -25,6 +25,7 @@ a {
 .cursive {
   font-family: 'Shrikhand', cursive;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .cursive--footer {
@@ -43,7 +44,7 @@ a {
   background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
   cursor: pointer;
   border-radius: 2rem;
-  padding: 1rem 3.5rem;
+  padding: 1rem 1.5rem;
   -webkit-box-shadow: 2px 1px 8px -3px #000;
           box-shadow: 2px 1px 8px -3px #000;
 }
@@ -127,6 +128,15 @@ a {
 }
 
 .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -147,7 +157,7 @@ a {
   background-clip: text;
   -webkit-transition: all 750ms;
   transition: all 750ms;
-  font-size: 2rem;
+  font-size: 1.6rem;
   position: absolute;
   right: 1rem;
 }
@@ -165,12 +175,16 @@ a {
 .fa-heart {
   -webkit-transition: all 750ms;
   transition: all 750ms;
-  font-size: 2rem;
+  font-size: 1.6rem;
   position: absolute;
   right: 1rem;
 }
 
 header {
+  width: 100%;
+  padding: 1rem 0 0.5rem;
+  position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,15 +194,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .cursive {
-  text-align: center;
   -webkit-box-shadow: 2px 1px 8px -3px #000;
           box-shadow: 2px 1px 8px -3px #000;
-  position: relative;
-  z-index: 10;
-  width: 100%;
 }
 
 footer {
@@ -308,7 +315,7 @@ footer .footer-box .fas {
   background-color: #EAEAEA;
   color: black;
   width: 100%;
-  padding: 1rem;
+  padding: 0.15rem;
   font-weight: bold;
 }
 
@@ -334,7 +341,7 @@ footer .footer-box .fas {
 
 .process {
   counter-reset: step;
-  padding: 0 1rem;
+  padding: 1.25rem 1rem 2.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,6 +407,7 @@ footer .footer-box .fas {
 
 .process__border::before {
   position: absolute;
+  font-size: 0.8rem;
   left: -1rem;
   width: 1.5rem;
   height: 1.5rem;
@@ -434,6 +442,7 @@ footer .footer-box .fas {
   content: "";
   color: #7e7e7e;
   margin: 0 1rem;
+  font-size: 1.15rem;
 }
 
 .process__stage--bars::before {
@@ -447,6 +456,7 @@ footer .footer-box .fas {
   content: "";
   color: #7e7e7e;
   margin: 0 1rem;
+  font-size: 1.15rem;
 }
 
 .process__stage--store::before {
@@ -460,6 +470,7 @@ footer .footer-box .fas {
   content: "";
   color: #7e7e7e;
   margin: 0 1rem;
+  font-size: 1.15rem;
 }
 
 .process h2 {
@@ -485,5 +496,9 @@ footer .footer-box .fas {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
   }
+}
+
+.restaurant h2 {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,10 +18,14 @@
         justify-content: space-between;
     }
     & h2{
-        display: flex;
-        align-items: center;
+        @include flex-column;
         text-transform: uppercase;
         font-size: 1.25*$base-scale;
         font-weight: 300;
+        &::after{
+            content: "";
+            width: 10px;
+            border: 1mm $color-tertiary;
+        }
     }
 }

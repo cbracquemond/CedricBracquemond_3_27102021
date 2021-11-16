@@ -46,7 +46,7 @@
 }
 @mixin heart-values {
   transition: all 750ms;
-  font-size: 2*$base-scale;
+  font-size: 1.6*$base-scale;
   position: absolute;
   right: $base-scale;
 }
@@ -67,4 +67,5 @@
 @mixin process-icons {
   color: $color-icons;
   margin: 0 $base-scale;  
+  font-size: 1.15*$base-scale;
 }

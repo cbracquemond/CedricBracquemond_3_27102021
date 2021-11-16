@@ -1,4 +1,5 @@
 .heart {
+	@include flex-center;
 	position: relative;
 	&::before {
 		@include font-awesome(900, "\f004") {
