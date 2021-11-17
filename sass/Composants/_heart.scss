@@ -5,7 +5,7 @@
 	height: 2*$base-scale;
 	position: relative;
 	&::before {
-		@include font-awesome(900, "\f004") {
+		@include font-awesome("\f004") {
 			opacity: 0;
 			color: transparent;
 			background-image: linear-gradient(
@@ -19,7 +19,7 @@
 		}
 	}
 	&::after {
-		@include font-awesome(400, "\f004") {
+		@include font-awesome("\f004", 400) {
 			@include heart-values;
 		}
 	}

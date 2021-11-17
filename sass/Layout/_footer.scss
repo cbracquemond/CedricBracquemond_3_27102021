@@ -16,12 +16,12 @@ footer{
         &__link {
             margin-bottom: 5px;
             &--utensils::before{
-                @include font-awesome(900, "\f2e7"){
+                @include font-awesome("\f2e7"){
                     width: 1.5*$base-scale;
                 }
             }
             &--hand::before{
-                @include font-awesome(900, "\f4c4"){
+                @include font-awesome("\f4c4"){
                     width: 1.5*$base-scale;
                 }
             }

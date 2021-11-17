@@ -47,17 +47,17 @@
     &__stage{
         font-weight: bold;
         &--mobile::before{
-            @include font-awesome (900, "\f3cd"){
+            @include font-awesome ("\f3cd"){
                 @include process-icons;
             }
         }
         &--bars::before{
-            @include font-awesome (900,"\f0c9"){
+            @include font-awesome ("\f0c9"){
                 @include process-icons;
             }
         }
         &--store::before{
-            @include font-awesome (900, "\f54e"){
+            @include font-awesome ("\f54e"){
                 @include process-icons;
             }
         }
