@@ -26,9 +26,9 @@
 		&__dish {
 			display: flex;
 			background-color: white;
-			min-width: 0;
 			border-radius: $base-scale;
 			overflow: hidden;
+			cursor: pointer;
 			@include shadow;
 			&:hover .menu__courses__check::after{
 				animation: spin-to-win 750ms forwards;
@@ -43,7 +43,7 @@
 			justify-content: space-between;
 			margin: $base-scale;
 			width: 100%;
-			& h3, span {
+			h3, span {
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis;

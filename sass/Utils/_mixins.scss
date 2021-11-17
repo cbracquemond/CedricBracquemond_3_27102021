@@ -32,7 +32,7 @@
     }
   }
 
-@mixin shadow($color:#000, $spread:-3px) {
+@mixin shadow($color:$color-icons, $spread:-3px) {
     box-shadow: 2px 1px 8px $spread $color; 
 }
 

@@ -88,8 +88,8 @@ a {
   cursor: pointer;
   border-radius: 2rem;
   padding: 1rem 1.5rem;
-  -webkit-box-shadow: 2px 1px 8px -3px #000;
-          box-shadow: 2px 1px 8px -3px #000;
+  -webkit-box-shadow: 2px 1px 8px -3px #7e7e7e;
+          box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 .gradient-button:hover {
@@ -113,8 +113,8 @@ a {
   width: 100%;
   background-color: white;
   border-radius: 16px;
-  -webkit-box-shadow: 2px 1px 8px -3px #000;
-          box-shadow: 2px 1px 8px -3px #000;
+  -webkit-box-shadow: 2px 1px 8px -3px #7e7e7e;
+          box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 .card:hover {
@@ -244,8 +244,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 2px 1px 8px -3px #000;
-          box-shadow: 2px 1px 8px -3px #000;
+  -webkit-box-shadow: 2px 1px 8px -3px #7e7e7e;
+          box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 footer {
@@ -437,8 +437,8 @@ footer .footer-box .fas {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-box-shadow: 2px 1px 8px -3px #000;
-          box-shadow: 2px 1px 8px -3px #000;
+  -webkit-box-shadow: 2px 1px 8px -3px #7e7e7e;
+          box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 .process__border:hover {
