@@ -1,31 +1,58 @@
 .menu {
-    padding: 0 $base-scale;
+	padding: 0 $base-scale;
 	background-color: $color-background;
-    border-radius: $base-scale $base-scale 0 0;
-    margin-top: -5px;
-    z-index: 10;
-    @include flex-column;
-	&__courses-box {
+	border-radius: $base-scale $base-scale 0 0;
+	margin-top: -5px;
+	z-index: 10;
+	@include flex-column;
+	&__courses {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: $base-scale;
-	}
-    &__name{
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
-    }
-    & h2{
-        @include flex-column;
-        text-transform: uppercase;
-        font-size: 1.25*$base-scale;
-        font-weight: 300;
-        &::after{
-            content: "";
-            width: 10px;
-            border: 1mm $color-tertiary;
+		grid-gap: $base-scale;
+		@include media(tablet-landscape) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+		}
+        &__box{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: $base-scale;
         }
-    }
+        &__dish{
+                @include flex-column;
+                background-color: white;
+                border-radius: $base-scale;
+                padding: $base-scale;
+        }
+        &__info{
+                display: flex;
+                justify-content: space-between;
+        }
+        &__price{
+                font-weight: bold;
+        }
+	}
+	&__name {
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		margin-top: 2 * $base-scale;
+	}
+	& h2 {
+		@include flex-column;
+		padding-top: 2.5 * $base-scale;
+		text-transform: uppercase;
+		font-size: 1.25 * $base-scale;
+		font-weight: 300;
+		&::after {
+			content: "";
+			margin-top: 0.35 * $base-scale;
+			width: 3 * $base-scale;
+			border: solid $color-tertiary;
+		}
+	}
 }

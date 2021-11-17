@@ -73,43 +73,6 @@ a {
   transition: 200ms;
 }
 
-.course {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 1rem;
-}
-
-.course__dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-.course__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.course__price {
-  font-weight: bold;
-}
-
 .heart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +179,28 @@ header {
           flex-direction: column;
 }
 
-.menu__courses-box {
+.menu__courses {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .menu__courses {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+.menu__courses__box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -225,6 +209,32 @@ header {
       grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 1rem;
+}
+
+.menu__courses__dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.menu__courses__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__courses__price {
+  font-weight: bold;
 }
 
 .menu__name {
@@ -236,6 +246,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .menu h2 {
@@ -246,6 +257,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 2.5rem;
   text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 300;
@@ -253,8 +265,9 @@ header {
 
 .menu h2::after {
   content: "";
-  width: 10px;
-  border: 1mm #99E2D0;
+  margin-top: 0.35rem;
+  width: 3rem;
+  border: solid #99E2D0;
 }
 
 footer {
