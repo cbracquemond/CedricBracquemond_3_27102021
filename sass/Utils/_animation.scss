@@ -1,0 +1,19 @@
+@keyframes spin-to-win {
+    from{
+        transform: rotate(-360deg);
+        width: 0px;
+    }
+    to{
+        transform: rotate(0deg);
+        width: 4 * $base-scale;
+    }
+}
+
+@keyframes spin-out {
+    from{
+        width: 4 * $base-scale;
+    }
+    to{
+        width: 0px;
+    }
+}
