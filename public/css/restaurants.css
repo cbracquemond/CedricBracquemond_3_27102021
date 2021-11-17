@@ -203,26 +203,71 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: white;
+  min-width: 0;
   border-radius: 1rem;
-  padding: 1rem;
+}
+
+.menu__courses__dish::after {
+  content: "";
+  background-color: #99E2D0;
+  color: white;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 1rem 1rem 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: width 750ms ease-in-out, opacity 250ms ease-in-out;
+  transition: width 750ms ease-in-out, opacity 250ms ease-in-out;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__courses__dish:hover::after {
+  width: 6rem;
+  opacity: 1;
 }
 
 .menu__courses__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 1rem;
+  width: 100%;
+}
+
+.menu__courses__info h3, .menu__courses__info span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu__courses__price {
   font-weight: bold;
+  margin: auto 1rem 1rem auto;
 }
 
 .menu__name {

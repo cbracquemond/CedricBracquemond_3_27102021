@@ -3,8 +3,8 @@
 	z-index: 5;
 	padding: 0 $base-scale;
 	background-color: $color-background;
-	border-radius: 2*$base-scale 2*$base-scale 0 0;
-	margin-top: -3*$base-scale;
+	border-radius: 2 * $base-scale 2 * $base-scale 0 0;
+	margin-top: -3 * $base-scale;
 	@include flex-column;
 	&__courses {
 		display: grid;
@@ -16,26 +16,52 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: 1fr;
 		}
-        &__box{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: $base-scale;
-        }
-        &__dish{
-                @include flex-column;
-                background-color: white;
-                border-radius: $base-scale;
-                padding: $base-scale;
-        }
-        &__info{
-                display: flex;
-                justify-content: space-between;
-        }
-        &__price{
-                font-weight: bold;
-        }
+		&__box {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, 1fr);
+			grid-column-gap: 0px;
+			grid-row-gap: $base-scale;
+		}
+		&__dish {
+			display: flex;
+			background-color: white;
+			min-width: 0;
+			border-radius: $base-scale;
+			&::after {
+				content: "";
+				background-color: $color-tertiary;
+				color: white;
+				width: 0;
+				opacity: 0;
+				border-radius: 0 $base-scale $base-scale 0;
+				transform-origin: right;
+				transition: width 750ms ease-in-out, opacity 250ms ease-in-out; 
+				@include font-awesome("\f058") {
+					@include flex-center;
+				}
+			}
+			&:hover::after{
+				width: 6 * $base-scale ;
+				opacity: 1;
+			}
+		}
+		&__info {
+			@include flex-column;
+			min-width: 0;
+			justify-content: space-between;
+			margin: $base-scale;
+			width: 100%;
+			& h3, span {
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		}
+		&__price {
+			font-weight: bold;
+			margin: auto $base-scale $base-scale auto;
+		}
 	}
 	&__name {
 		display: flex;
