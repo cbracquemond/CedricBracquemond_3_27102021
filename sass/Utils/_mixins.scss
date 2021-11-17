@@ -48,7 +48,6 @@
   transition: all 750ms;
   font-size: 1.6*$base-scale;
   position: absolute;
-  right: $base-scale;
 }
 
 @mixin font-awesome ($weight, $unicode) {

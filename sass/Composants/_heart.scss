@@ -1,5 +1,8 @@
 .heart {
 	@include flex-center;
+	margin-right: $base-scale;
+	width: 2*$base-scale;
+	height: 2*$base-scale;
 	position: relative;
 	&::before {
 		@include font-awesome(900, "\f004") {
@@ -15,16 +18,17 @@
 			@include heart-values;
 		}
 	}
+	&::after {
+		@include font-awesome(400, "\f004") {
+			@include heart-values;
+		}
+	}
 	&:hover::before {
 		opacity: 1;
 		transform: scale(1.1);
 	}
-	&:hover .fa-heart{
+	&:hover::after {
 		opacity: 0;
 	}
-}
-.fa-heart {
-	@include heart-values;
-
 }
 

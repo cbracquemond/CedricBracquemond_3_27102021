@@ -120,6 +120,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
   position: relative;
 }
 
@@ -142,7 +145,21 @@ a {
   transition: all 750ms;
   font-size: 1.6rem;
   position: absolute;
-  right: 1rem;
+}
+
+.heart::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "";
+  -webkit-transition: all 750ms;
+  transition: all 750ms;
+  font-size: 1.6rem;
+  position: absolute;
 }
 
 .heart:hover::before {
@@ -151,16 +168,8 @@ a {
           transform: scale(1.1);
 }
 
-.heart:hover .fa-heart {
+.heart:hover::after {
   opacity: 0;
-}
-
-.fa-heart {
-  -webkit-transition: all 750ms;
-  transition: all 750ms;
-  font-size: 1.6rem;
-  position: absolute;
-  right: 1rem;
 }
 
 .picture {
