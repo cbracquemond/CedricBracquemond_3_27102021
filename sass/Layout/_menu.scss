@@ -28,22 +28,24 @@
 			background-color: white;
 			min-width: 0;
 			border-radius: $base-scale;
+			overflow: hidden;
 			&::after {
 				content: "";
 				background-color: $color-tertiary;
 				color: white;
-				width: 0;
-				opacity: 0;
+				width: 6 * $base-scale ;
 				border-radius: 0 $base-scale $base-scale 0;
-				transform-origin: right;
-				transition: width 750ms ease-in-out, opacity 250ms ease-in-out; 
+				transition: transform 750ms ease-in-out, opacity 250ms ease-in-out; 
 				@include font-awesome("\f058") {
 					@include flex-center;
 				}
 			}
-			&:hover::after{
-				width: 6 * $base-scale ;
-				opacity: 1;
+			&:not(:hover)::after{
+				opacity: 0;
+				transform: translate(4*$base-scale);
+			}
+			&:hover .menu__courses__price{
+				transform: translate(0);
 			}
 		}
 		&__info {
@@ -59,8 +61,12 @@
 			}
 		}
 		&__price {
+			position: relative;
+			z-index: 5;
 			font-weight: bold;
 			margin: auto $base-scale $base-scale auto;
+			transition: 750ms ease-in-out;
+			transform: translate(4*$base-scale);
 		}
 	}
 	&__name {

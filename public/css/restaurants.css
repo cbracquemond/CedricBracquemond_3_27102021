@@ -206,19 +206,19 @@ header {
   background-color: white;
   min-width: 0;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .menu__courses__dish::after {
   content: "";
   background-color: #99E2D0;
   color: white;
-  width: 0;
-  opacity: 0;
+  width: 6rem;
   border-radius: 0 1rem 1rem 0;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: width 750ms ease-in-out, opacity 250ms ease-in-out;
-  transition: width 750ms ease-in-out, opacity 250ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out, -webkit-transform 750ms ease-in-out;
+  transition: opacity 250ms ease-in-out, -webkit-transform 750ms ease-in-out;
+  transition: transform 750ms ease-in-out, opacity 250ms ease-in-out;
+  transition: transform 750ms ease-in-out, opacity 250ms ease-in-out, -webkit-transform 750ms ease-in-out;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -238,9 +238,15 @@ header {
           align-items: center;
 }
 
-.menu__courses__dish:hover::after {
-  width: 6rem;
-  opacity: 1;
+.menu__courses__dish:not(:hover)::after {
+  opacity: 0;
+  -webkit-transform: translate(4rem);
+          transform: translate(4rem);
+}
+
+.menu__courses__dish:hover .menu__courses__price {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .menu__courses__info {
@@ -266,8 +272,14 @@ header {
 }
 
 .menu__courses__price {
+  position: relative;
+  z-index: 5;
   font-weight: bold;
   margin: auto 1rem 1rem auto;
+  -webkit-transition: 750ms ease-in-out;
+  transition: 750ms ease-in-out;
+  -webkit-transform: translate(4rem);
+          transform: translate(4rem);
 }
 
 .menu__name {
