@@ -1,7 +1,7 @@
 // import Utils: variables => fonctions => mixins => placeholder
 @import "./Utils/variables";
 @import "./Utils/mixins";
-@import "./Utils/animation";
+@import "./Utils/animations";
 // import Base
 @import "./Base/typo";
 @import "./Base/reset";
@@ -18,3 +18,4 @@
 @import "./Pages/index__explore";
 @import "./Pages/index__process";
 @import "./Pages/index\ __restaurant";
+@import "./Pages/index__loading";

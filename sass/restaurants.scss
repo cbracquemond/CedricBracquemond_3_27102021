@@ -1,7 +1,7 @@
 // import Utils: variables => fonctions => mixins => placeholder
 @import "./Utils/variables";
 @import "./Utils/mixins";
-@import "./Utils/animation";
+@import "./Utils/animations";
 // import Base
 @import "./Base/typo";
 @import "./Base/reset";
@@ -12,7 +12,7 @@
 @import "./Composants/heart";
 // Import Layout
 @import "./Layout/header";
-@import "./Layout/menu";
 @import "./Layout/footer";
 // Import Pages
 @import "./Pages/restaurant__banner";
+@import "./Pages/restaurant__menu";

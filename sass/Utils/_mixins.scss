@@ -1,70 +1,97 @@
 // flex mixins:
 
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 @mixin flex-center-column {
-    @include flex-center();
-    flex-direction: column;
+	@include flex-center();
+	flex-direction: column;
 }
 
 //media query mixins:
 
 @mixin media($size) {
-    @if $size == phone-only {
-      @media (max-width: 599px) { @content; }
-    } @else if $size == small-phone {
-      @media (max-width: 390px) { @content; }
-    } @else if $size == tablet-portrait {
-      @media (min-width: 600px) { @content; }
-    } @else if $size == tablet-landscape {
-      @media (min-width: 900px) { @content; }
-    } @else if $size == desktop {
-      @media (min-width: 1200px) { @content; }
-    } @else if $size == big-desktop {
-      @media (min-width: 1800px) { @content; }
-    }
-  }
+	@if $size == phone-only {
+		@media (max-width: 599px) {
+			@content;
+		}
+	} @else if $size == small-phone {
+		@media (max-width: 390px) {
+			@content;
+		}
+	} @else if $size == tablet-portrait {
+		@media (min-width: 600px) {
+			@content;
+		}
+	} @else if $size == tablet-landscape {
+		@media (min-width: 900px) {
+			@content;
+		}
+	} @else if $size == desktop {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	} @else if $size == big-desktop {
+		@media (min-width: 1800px) {
+			@content;
+		}
+	}
+}
 
-@mixin shadow($color:$color-icons, $spread:-3px) {
-    box-shadow: 2px 1px 8px $spread $color; 
+@mixin shadow($color: $color-icons, $spread: -3px) {
+	box-shadow: 2px 1px 8px $spread $color;
 }
 
 @mixin hover-effect {
-    &:hover{
-        @include shadow($color-primary,3px);
-        transition: all 200ms;
-        transform: scale(1.02);
-        @content; 
-    }
+	&:hover {
+		@include shadow($color-primary, 3px);
+		transition: all 200ms;
+		transform: scale(1.02);
+		@content;
+	}
 }
 @mixin heart-values {
-  transition: all 750ms;
-  font-size: 1.6*$base-scale;
-  position: absolute;
+	transition: all 750ms;
+	font-size: 1.6 * $base-scale;
+	position: absolute;
 }
 
-@mixin font-awesome ($unicode, $weight:900 ) {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free";
-    font-weight: $weight;
-    content: $unicode;
-    @content;
-
+@mixin font-awesome($unicode, $weight: 900) {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Free";
+	font-weight: $weight;
+	content: $unicode;
+	@content;
 }
 
 @mixin process-icons {
-  color: $color-icons;
-  margin: 0 $base-scale;  
-  font-size: 1.15*$base-scale;
+	color: $color-icons;
+	margin: 0 $base-scale;
+	font-size: 1.15 * $base-scale;
+}
+
+@mixin fade-in-loop {
+	@for $i from 1 through 9 {
+		&--#{$i} {
+			animation-delay: $i * 100ms;
+		}
+	}
+}
+
+@mixin loading-circle($color, $size:$base-scale) {
+  position: absolute;
+	width: $base-scale;
+	height: $base-scale;
+	background-color: $color;
+	border-radius: 50%;
 }

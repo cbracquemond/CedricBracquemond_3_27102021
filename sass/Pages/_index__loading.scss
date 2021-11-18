@@ -1,0 +1,15 @@
+body {
+    position: relative;
+}
+
+.loading{
+    top: 0px;
+    right: 0px;
+    @include loading-circle;
+    &::before{
+        @include loading-circle;
+    }
+    &::after{
+        @include loading-circle;    
+    }
+}

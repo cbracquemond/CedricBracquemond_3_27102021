@@ -24,11 +24,14 @@
 			grid-row-gap: $base-scale;
 		}
 		&__dish {
+			opacity: 0;
 			display: flex;
 			background-color: white;
 			border-radius: $base-scale;
 			overflow: hidden;
 			cursor: pointer;
+			animation: fade-in 2000ms ease-in-out forwards;
+			@include fade-in-loop;
 			@include shadow;
 			&:hover .menu__courses__check::after{
 				animation: spin-to-win 750ms forwards;

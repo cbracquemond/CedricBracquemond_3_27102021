@@ -1,0 +1,44 @@
+// spin: for check marks on menu pages:
+
+@keyframes spin-to-win {
+    from{
+        transform: rotate(-360deg);
+        width: 0px;
+    }
+    to{
+        transform: rotate(0deg);
+        width: 4 * $base-scale;
+    }
+}
+@keyframes spin-out {
+    from{
+        width: 4 * $base-scale;
+    }
+    to{
+        width: 0px;
+    }
+}
+
+// fade-in: for the appearance of dishes cards
+@keyframes fade-in {
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading {
+    0%{
+        opacity: 0.1;
+    }
+    90%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
