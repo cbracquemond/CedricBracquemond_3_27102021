@@ -63,9 +63,8 @@
 				height: 100%;
 				width: 0;
 				border-radius: 0 $base-scale $base-scale 0;
-				@include font-awesome("\f058") {
-					@include flex-center;
-				}
+				@include flex-center;
+				@include font-awesome("\f058")
 			}
 		}
 	}

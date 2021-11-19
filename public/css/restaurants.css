@@ -183,14 +183,6 @@ a {
 }
 
 .heart::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
   opacity: 0;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9356dc));
@@ -201,9 +193,21 @@ a {
   transition: all 750ms;
   font-size: 1.6rem;
   position: absolute;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
 
 .heart::after {
+  -webkit-transition: all 750ms;
+  transition: all 750ms;
+  font-size: 1.6rem;
+  position: absolute;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -212,10 +216,6 @@ a {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "";
-  -webkit-transition: all 750ms;
-  transition: all 750ms;
-  font-size: 1.6rem;
-  position: absolute;
 }
 
 .heart:hover::before {
@@ -291,6 +291,7 @@ footer .footer-box__link {
 }
 
 footer .footer-box__link--utensils::before {
+  width: 1.5rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -299,10 +300,10 @@ footer .footer-box__link--utensils::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  width: 1.5rem;
 }
 
 footer .footer-box__link--hand::before {
+  width: 1.5rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -311,7 +312,6 @@ footer .footer-box__link--hand::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  width: 1.5rem;
 }
 
 footer .footer-box .fas {
@@ -444,6 +444,11 @@ footer .footer-box .fas {
           animation-delay: 900ms;
 }
 
+.menu__courses__dish--10 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
 .menu__courses__dish:hover .menu__courses__check::after {
   -webkit-animation: spin-to-win 750ms forwards;
           animation: spin-to-win 750ms forwards;
@@ -490,14 +495,6 @@ footer .footer-box .fas {
   height: 100%;
   width: 0;
   border-radius: 0 1rem 1rem 0;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,6 +504,14 @@ footer .footer-box .fas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
 
 .menu__name {

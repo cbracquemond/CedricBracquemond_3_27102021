@@ -1,15 +1,8 @@
-body {
-    position: relative;
-}
-
 .loading{
-    top: 0px;
-    right: 0px;
-    @include loading-circle;
-    &::before{
-        @include loading-circle;
-    }
-    &::after{
-        @include loading-circle;    
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+    &__circle{
+        @include circles;
     }
 }

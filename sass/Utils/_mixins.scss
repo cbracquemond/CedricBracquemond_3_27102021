@@ -56,10 +56,11 @@
 		@content;
 	}
 }
-@mixin heart-values {
+@mixin heart-values($weight:900) {
 	transition: all 750ms;
 	font-size: 1.6 * $base-scale;
 	position: absolute;
+	@include font-awesome("\f004", $weight )
 }
 
 @mixin font-awesome($unicode, $weight: 900) {
@@ -81,17 +82,20 @@
 }
 
 @mixin fade-in-loop {
-	@for $i from 1 through 9 {
+	@for $i from 1 through 10 {
 		&--#{$i} {
 			animation-delay: $i * 100ms;
 		}
 	}
 }
 
-@mixin loading-circle($color, $size:$base-scale) {
-  position: absolute;
-	width: $base-scale;
-	height: $base-scale;
-	background-color: $color;
+@mixin circles($size: $base-scale) {
+	width: $size;
+	height: $size;
 	border-radius: 50%;
+	@each $name, $color in $color-map {
+		&--#{$name} {
+			background-color: $color;
+		}
+	}
 }

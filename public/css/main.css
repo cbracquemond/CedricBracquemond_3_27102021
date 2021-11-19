@@ -237,14 +237,6 @@ a {
 }
 
 .heart::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
   opacity: 0;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9356dc));
@@ -255,9 +247,21 @@ a {
   transition: all 750ms;
   font-size: 1.6rem;
   position: absolute;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
 
 .heart::after {
+  -webkit-transition: all 750ms;
+  transition: all 750ms;
+  font-size: 1.6rem;
+  position: absolute;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -266,10 +270,6 @@ a {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "";
-  -webkit-transition: all 750ms;
-  transition: all 750ms;
-  font-size: 1.6rem;
-  position: absolute;
 }
 
 .heart:hover::before {
@@ -345,6 +345,7 @@ footer .footer-box__link {
 }
 
 footer .footer-box__link--utensils::before {
+  width: 1.5rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -353,10 +354,10 @@ footer .footer-box__link--utensils::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  width: 1.5rem;
 }
 
 footer .footer-box__link--hand::before {
+  width: 1.5rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -365,7 +366,6 @@ footer .footer-box__link--hand::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  width: 1.5rem;
 }
 
 footer .footer-box .fas {
@@ -420,6 +420,7 @@ footer .footer-box .fas {
 }
 
 .explore__location p::before {
+  margin-right: 1rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -428,7 +429,6 @@ footer .footer-box .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  margin-right: 1rem;
 }
 
 .explore p {
@@ -464,7 +464,7 @@ footer .footer-box .fas {
           flex-direction: column;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .process__box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -528,10 +528,22 @@ footer .footer-box .fas {
 }
 
 .process__stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
 }
 
 .process__stage--mobile::before {
+  color: #7e7e7e;
+  margin: 0 1rem;
+  font-size: 1.15rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -540,12 +552,13 @@ footer .footer-box .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  color: #7e7e7e;
-  margin: 0 1rem;
-  font-size: 1.15rem;
+  display: block;
 }
 
 .process__stage--bars::before {
+  color: #7e7e7e;
+  margin: 0 1rem;
+  font-size: 1.15rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -554,12 +567,13 @@ footer .footer-box .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  color: #7e7e7e;
-  margin: 0 1rem;
-  font-size: 1.15rem;
+  display: block;
 }
 
 .process__stage--store::before {
+  color: #7e7e7e;
+  margin: 0 1rem;
+  font-size: 1.15rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -568,9 +582,7 @@ footer .footer-box .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
-  color: #7e7e7e;
-  margin: 0 1rem;
-  font-size: 1.15rem;
+  display: block;
 }
 
 .process h2 {
@@ -602,17 +614,27 @@ footer .footer-box .fas {
   margin-bottom: 2rem;
 }
 
-body {
-  position: relative;
+.loading {
+  position: fixed;
+  height: 100%;
+  z-index: 10;
 }
 
-.loading {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background-color: #9356DC;
+.loading__circle {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
+}
+
+.loading__circle--primary {
+  background-color: #9356DC;
+}
+
+.loading__circle--secondary {
+  background-color: #FF79DA;
+}
+
+.loading__circle--tertiary {
+  background-color: #99E2D0;
 }
 /*# sourceMappingURL=main.css.map */

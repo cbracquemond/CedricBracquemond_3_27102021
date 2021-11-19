@@ -12,9 +12,8 @@
         padding: 0.15*$base-scale;
         font-weight: bold;
         & p::before{
-            @include font-awesome("\f3c5"){
-                margin-right: $base-scale;
-            }
+            margin-right: $base-scale;
+            @include font-awesome("\f3c5")
         }
     }
     & p{

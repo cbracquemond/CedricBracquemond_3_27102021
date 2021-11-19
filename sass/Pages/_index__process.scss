@@ -7,7 +7,7 @@
         padding-left: $base-scale;
         gap: 2*$base-scale;
         @include flex-column;
-        @include media(tablet-portrait) {
+        @include media(tablet-landscape) {
             flex-direction: row;
         }
     }
@@ -45,20 +45,13 @@
         }
     }
     &__stage{
+        @include flex-center;
         font-weight: bold;
-        &--mobile::before{
-            @include font-awesome ("\f3cd"){
+        @each $name, $code in $icons-map{
+            &--#{$name}::before{
                 @include process-icons;
-            }
-        }
-        &--bars::before{
-            @include font-awesome ("\f0c9"){
-                @include process-icons;
-            }
-        }
-        &--store::before{
-            @include font-awesome ("\f54e"){
-                @include process-icons;
+                @include font-awesome ($code);
+                display: block;
             }
         }
     }

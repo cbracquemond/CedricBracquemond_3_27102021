@@ -7,3 +7,9 @@ $color-footer:#353535;
 $color-location: #EAEAEA;
 $color-background: #F6F6F6;
 $color-icons: #7e7e7e;
+
+//map for circles mixin
+$color-map: ("primary": $color-primary, "secondary": $color-secondary, "tertiary": $color-tertiary);
+
+//map for process__stage icons
+$icons-map:("mobile": "\f3cd", "bars": "\f0c9", "store": "\f54e");
