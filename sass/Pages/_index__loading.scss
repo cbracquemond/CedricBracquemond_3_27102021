@@ -6,9 +6,9 @@
 	z-index: 10;
 	background-color: $color-loading;
 	animation: loading 3s;
-	@include flex-center(space-between);
+	@include flex-center();
 	&__circle {
-		animation: loading-circle 1s ease 4;
+		animation: loading-circle 1s ease 3;
 		@include circles;
 		@include circle-delay;
 	}
