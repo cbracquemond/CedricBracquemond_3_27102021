@@ -143,8 +143,8 @@ a {
 }
 
 .gradient-button:hover {
-  -webkit-box-shadow: 2px 1px 8px 3px #9356DC;
-          box-shadow: 2px 1px 8px 3px #9356DC;
+  -webkit-box-shadow: 2px 1px 8px 3px #9356dc;
+          box-shadow: 2px 1px 8px 3px #9356dc;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-transform: scale(1.02);
@@ -340,7 +340,7 @@ footer .footer-box .fas {
   position: relative;
   z-index: 5;
   padding: 0 1rem;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
   margin-top: -3rem;
   display: -webkit-box;
@@ -475,7 +475,8 @@ footer .footer-box .fas {
   width: 100%;
 }
 
-.menu__courses__info h3, .menu__courses__info span {
+.menu__courses__info h3,
+.menu__courses__info span {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -487,7 +488,7 @@ footer .footer-box .fas {
 }
 
 .menu__courses__check {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
 .menu__courses__check::after {
@@ -495,6 +496,14 @@ footer .footer-box .fas {
   height: 100%;
   width: 0;
   border-radius: 0 1rem 1rem 0;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,25 +513,18 @@ footer .footer-box .fas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
 }
 
 .menu__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
 }
 
@@ -544,6 +546,6 @@ footer .footer-box .fas {
   content: "";
   margin-top: 0.35rem;
   width: 3rem;
-  border: solid #99E2D0;
+  border: solid #99e2d0;
 }
 /*# sourceMappingURL=restaurants.css.map */

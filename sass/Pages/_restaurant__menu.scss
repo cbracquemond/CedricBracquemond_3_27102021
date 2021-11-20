@@ -33,10 +33,10 @@
 			animation: fade-in 2000ms ease-in-out forwards;
 			@include fade-in-loop;
 			@include shadow;
-			&:hover .menu__courses__check::after{
+			&:hover .menu__courses__check::after {
 				animation: spin-to-win 750ms forwards;
 			}
-			&:not(:hover) .menu__courses__check::after{
+			&:not(:hover) .menu__courses__check::after {
 				animation: spin-out 750ms;
 			}
 		}
@@ -46,7 +46,8 @@
 			justify-content: space-between;
 			margin: $base-scale;
 			width: 100%;
-			h3, span {
+			h3,
+			span {
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis;
@@ -56,22 +57,20 @@
 			font-weight: bold;
 			margin: auto $base-scale $base-scale auto;
 		}
-		&__check{
+		&__check {
 			background-color: $color-tertiary;
 			&::after {
 				color: white;
 				height: 100%;
 				width: 0;
 				border-radius: 0 $base-scale $base-scale 0;
+				@include font-awesome("\f058");
 				@include flex-center;
-				@include font-awesome("\f058")
 			}
 		}
 	}
 	&__name {
-		display: flex;
-		align-content: center;
-		justify-content: space-between;
+		@include flex-center(space-between);
 		margin-top: 2 * $base-scale;
 	}
 	& h2 {

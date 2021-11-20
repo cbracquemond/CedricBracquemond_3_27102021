@@ -143,8 +143,8 @@ a {
 }
 
 .gradient-button:hover {
-  -webkit-box-shadow: 2px 1px 8px 3px #9356DC;
-          box-shadow: 2px 1px 8px 3px #9356DC;
+  -webkit-box-shadow: 2px 1px 8px 3px #9356dc;
+          box-shadow: 2px 1px 8px 3px #9356dc;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-transform: scale(1.02);
@@ -168,8 +168,8 @@ a {
 }
 
 .card:hover {
-  -webkit-box-shadow: 2px 1px 8px 3px #9356DC;
-          box-shadow: 2px 1px 8px 3px #9356DC;
+  -webkit-box-shadow: 2px 1px 8px 3px #9356dc;
+          box-shadow: 2px 1px 8px 3px #9356dc;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-transform: scale(1.02);
@@ -199,8 +199,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
 }
 
@@ -212,7 +213,7 @@ a {
   content: "Nouveau";
   position: absolute;
   font-weight: bold;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #1e6a57;
   padding: 0.5rem 1rem;
   right: 0px;
@@ -395,7 +396,7 @@ footer .footer-box .fas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
@@ -412,7 +413,7 @@ footer .footer-box .fas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   color: black;
   width: 100%;
   padding: 0.15rem;
@@ -475,7 +476,7 @@ footer .footer-box .fas {
 
 .process__border {
   position: relative;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   height: 4rem;
   width: 100%;
   border-radius: 1rem;
@@ -483,6 +484,9 @@ footer .footer-box .fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -492,8 +496,8 @@ footer .footer-box .fas {
 }
 
 .process__border:hover {
-  -webkit-box-shadow: 2px 1px 8px 3px #9356DC;
-          box-shadow: 2px 1px 8px 3px #9356DC;
+  -webkit-box-shadow: 2px 1px 8px 3px #9356dc;
+          box-shadow: 2px 1px 8px 3px #9356dc;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-transform: scale(1.02);
@@ -501,8 +505,10 @@ footer .footer-box .fas {
   background-color: #fbfbfb;
 }
 
-.process__border:hover .process__stage--mobile::before, .process__border:hover .process__stage--bars::before, .process__border:hover .process__stage--store::before {
-  color: #9356DC;
+.process__border:hover .process__stage--mobile::before,
+.process__border:hover .process__stage--bars::before,
+.process__border:hover .process__stage--store::before {
+  color: #9356dc;
 }
 
 .process__border::before {
@@ -514,7 +520,7 @@ footer .footer-box .fas {
   content: counter(step);
   counter-increment: step;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -590,7 +596,7 @@ footer .footer-box .fas {
 }
 
 .restaurant {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 3rem 1rem;
 }
 
@@ -615,9 +621,20 @@ footer .footer-box .fas {
 }
 
 .loading {
+  visibility: hidden;
   position: fixed;
   height: 100%;
+  width: 100%;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .loading__circle {
@@ -627,14 +644,14 @@ footer .footer-box .fas {
 }
 
 .loading__circle--primary {
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 .loading__circle--secondary {
-  background-color: #FF79DA;
+  background-color: #ff79da;
 }
 
 .loading__circle--tertiary {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 /*# sourceMappingURL=main.css.map */

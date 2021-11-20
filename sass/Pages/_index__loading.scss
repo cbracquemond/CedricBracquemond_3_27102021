@@ -1,8 +1,11 @@
-.loading{
-    position: fixed;
-    height: 100%;
-    z-index: 10;
-    &__circle{
-        @include circles;
-    }
+.loading {
+	visibility: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	@include flex-center;
+	&__circle {
+		@include circles;
+	}
 }

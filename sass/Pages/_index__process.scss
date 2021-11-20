@@ -1,61 +1,62 @@
-.process{
-    counter-reset: step;
-    padding: 1.25*$base-scale $base-scale 2.75*$base-scale;
-    @include flex-column;
-    &__box{
-        margin-bottom: $base-scale;
-        padding-left: $base-scale;
-        gap: 2*$base-scale;
-        @include flex-column;
-        @include media(tablet-landscape) {
-            flex-direction: row;
-        }
-    }
-    &__border{
-        position: relative;
-        background-color: $color-background;
-        height: 4*$base-scale;
-        width: 100%;
-        border-radius: $base-scale;
-        padding: $base-scale;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        @include shadow;
-        @include hover-effect{
-            background-color: scale-color($color-background, $lightness:50%);
-        }
-        &:hover .process__stage--mobile::before, &:hover .process__stage--bars::before, &:hover .process__stage--store::before{
-            color: $color-primary;
-        }
-        &::before{
-            position: absolute;
-            font-size: 0.8*$base-scale;
-            left: -1*$base-scale;
-            width: 1.5*$base-scale;
-            height: 1.5*$base-scale;
-            content: counter(step);
-            counter-increment: step;
-            color: white;
-            background-color: $color-primary;
-            border-radius: 50%;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    &__stage{
-        @include flex-center;
-        font-weight: bold;
-        @each $name, $code in $icons-map{
-            &--#{$name}::before{
-                @include process-icons;
-                @include font-awesome ($code);
-                display: block;
-            }
-        }
-    }
-    & h2{
-        margin: 1.5*$base-scale 0;
-    }
+.process {
+	counter-reset: step;
+	padding: 1.25 * $base-scale $base-scale 2.75 * $base-scale;
+	@include flex-column;
+	&__box {
+		margin-bottom: $base-scale;
+		padding-left: $base-scale;
+		gap: 2 * $base-scale;
+		@include flex-column;
+		@include media(tablet-landscape) {
+			flex-direction: row;
+		}
+	}
+	&__border {
+		position: relative;
+		background-color: $color-background;
+		height: 4 * $base-scale;
+		width: 100%;
+		border-radius: $base-scale;
+		padding: $base-scale;
+		@include flex-center(flex-start);
+		cursor: pointer;
+		@include shadow;
+		@include hover-effect {
+			background-color: scale-color($color-background, $lightness: 50%);
+		}
+		&:hover .process__stage--mobile::before,
+		&:hover .process__stage--bars::before,
+		&:hover .process__stage--store::before {
+			color: $color-primary;
+		}
+		&::before {
+			position: absolute;
+			font-size: 0.8 * $base-scale;
+			left: -1 * $base-scale;
+			width: 1.5 * $base-scale;
+			height: 1.5 * $base-scale;
+			content: counter(step);
+			counter-increment: step;
+			color: white;
+			background-color: $color-primary;
+			border-radius: 50%;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__stage {
+		@include flex-center;
+		font-weight: bold;
+		@each $name, $code in $icons-map {
+			&--#{$name}::before {
+				@include process-icons;
+				@include font-awesome($code);
+				display: block;
+			}
+		}
+	}
+	& h2 {
+		margin: 1.5 * $base-scale 0;
+	}
 }

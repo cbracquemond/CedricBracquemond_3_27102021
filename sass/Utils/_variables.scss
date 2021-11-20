@@ -1,15 +1,23 @@
 $base-scale: 1rem;
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-footer:#353535;
-$color-location: #EAEAEA;
-$color-background: #F6F6F6;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-footer: #353535;
+$color-location: #eaeaea;
+$color-background: #f6f6f6;
 $color-icons: #7e7e7e;
 
 //map for circles mixin
-$color-map: ("primary": $color-primary, "secondary": $color-secondary, "tertiary": $color-tertiary);
+$color-map: (
+	"primary": $color-primary,
+	"secondary": $color-secondary,
+	"tertiary": $color-tertiary,
+);
 
 //map for process__stage icons
-$icons-map:("mobile": "\f3cd", "bars": "\f0c9", "store": "\f54e");
+$icons-map: (
+	"mobile": "\f3cd",
+	"bars": "\f0c9",
+	"store": "\f54e",
+);

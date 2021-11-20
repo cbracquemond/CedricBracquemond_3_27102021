@@ -1,26 +1,24 @@
-.card{
-    width: 100%;
-    background-color: white;
-    border-radius: 16px;
-    @include shadow;
-    @include hover-effect;
-    &__container{
-        position: relative;
-        border-radius: 16px 16px 0 0;
-        width: 100%;
-        overflow: hidden;
-        min-height: 11*$base-scale;
-        height: 11*$base-scale;
-    }
-    img{
-        object-fit: cover;
-        min-height: 11*$base-scale;
-        width: 100%;
-    }
-    &__description{
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        padding: $base-scale;
-    }
+.card {
+	width: 100%;
+	background-color: white;
+	border-radius: 16px;
+	@include shadow;
+	@include hover-effect;
+	&__container {
+		position: relative;
+		border-radius: 16px 16px 0 0;
+		width: 100%;
+		overflow: hidden;
+		min-height: 11 * $base-scale;
+		height: 11 * $base-scale;
+	}
+	img {
+		object-fit: cover;
+		min-height: 11 * $base-scale;
+		width: 100%;
+	}
+	&__description {
+		@include flex-center(space-between);
+		padding: $base-scale;
+	}
 }
