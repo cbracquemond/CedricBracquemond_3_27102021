@@ -105,3 +105,11 @@
 		}
 	}
 }
+
+@mixin circle-delay {
+	@for $i from 1 through 3 {
+		&:nth-of-type(#{$i}) {
+			animation-delay: $i * 100ms;
+		}
+	}
+}

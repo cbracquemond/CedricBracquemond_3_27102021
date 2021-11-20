@@ -4,8 +4,13 @@
 	height: 100%;
 	width: 100%;
 	z-index: 10;
-	@include flex-center;
+	background-color: $color-loading;
+	padding: 0 11 * $base-scale;
+	animation: loading 3s;
+	@include flex-center(space-between);
 	&__circle {
+		animation: loading-circle 1s ease 4;
 		@include circles;
+		@include circle-delay;
 	}
 }
