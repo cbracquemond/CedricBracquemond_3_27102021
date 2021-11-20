@@ -368,6 +368,12 @@ footer .footer-box .fas {
   overflow: hidden;
 }
 
+@media (min-width: 600px) {
+  .banner {
+    padding-bottom: 0px;
+  }
+}
+
 .menu {
   position: relative;
   z-index: 5;
@@ -391,7 +397,7 @@ footer .footer-box .fas {
       grid-template-columns: 1fr;
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -410,70 +416,71 @@ footer .footer-box .fas {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 1rem;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  row-gap: 1rem;
 }
 
-.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 1) {
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(2) {
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
 }
 
-.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 2) {
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(3) {
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
 
-.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 3) {
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(4) {
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
 }
 
-.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 4) {
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(2) {
   -webkit-animation-delay: 1400ms;
           animation-delay: 1400ms;
 }
 
-.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 1) {
-  -webkit-animation-delay: 1400ms;
-          animation-delay: 1400ms;
-}
-
-.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 2) {
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(3) {
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 
-.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 3) {
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(4) {
   -webkit-animation-delay: 1800ms;
           animation-delay: 1800ms;
-}
-
-.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 4) {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-}
-
-.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 1) {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-}
-
-.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 2) {
-  -webkit-animation-delay: 2200ms;
-          animation-delay: 2200ms;
-}
-
-.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 3) {
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms;
-}
-
-.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 4) {
-  -webkit-animation-delay: 2600ms;
-          animation-delay: 2600ms;
 }
 
 .menu__courses__dish {

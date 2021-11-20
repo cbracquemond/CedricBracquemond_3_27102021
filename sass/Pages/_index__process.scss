@@ -18,8 +18,8 @@
 		width: 100%;
 		border-radius: $base-scale;
 		padding: $base-scale;
-		@include flex-center(flex-start);
 		cursor: pointer;
+		@include flex-center(flex-start);
 		@include shadow;
 		@include hover-effect {
 			background-color: scale-color($color-background, $lightness: 50%);
@@ -46,15 +46,9 @@
 		}
 	}
 	&__stage {
-		@include flex-center;
 		font-weight: bold;
-		@each $name, $code in $icons-map {
-			&--#{$name}::before {
-				@include process-icons;
-				@include font-awesome($code);
-				display: block;
-			}
-		}
+		@include flex-center;
+		@include process-icons-loop;
 	}
 	& h2 {
 		margin: 1.5 * $base-scale 0;

@@ -9,12 +9,9 @@ $color-background: #f6f6f6;
 $color-icons: #7e7e7e;
 $color-loading: rgba(126, 126, 126, 0.6);
 
-//map for circles mixin
-$color-map: (
-	"primary": $color-primary,
-	"secondary": $color-secondary,
-	"tertiary": $color-tertiary,
-);
+//list for circles mixin
+
+$color-list: $color-primary, $color-secondary, $color-tertiary;
 
 //map for process__stage icons
 $icons-map: (
@@ -22,3 +19,5 @@ $icons-map: (
 	"bars": "\f0c9",
 	"store": "\f54e",
 );
+
+$icons-list: ("\f3cd", "\f0c9", "\f54e");
