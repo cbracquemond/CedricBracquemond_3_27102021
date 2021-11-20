@@ -431,6 +431,11 @@ footer .footer-box .fas {
           animation-delay: 1200ms;
 }
 
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 4) {
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
 .menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 1) {
   -webkit-animation-delay: 1400ms;
           animation-delay: 1400ms;
@@ -446,6 +451,11 @@ footer .footer-box .fas {
           animation-delay: 1800ms;
 }
 
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 4) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
 .menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 1) {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
@@ -459,6 +469,11 @@ footer .footer-box .fas {
 .menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 3) {
   -webkit-animation-delay: 2400ms;
           animation-delay: 2400ms;
+}
+
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 4) {
+  -webkit-animation-delay: 2600ms;
+          animation-delay: 2600ms;
 }
 
 .menu__courses__dish {

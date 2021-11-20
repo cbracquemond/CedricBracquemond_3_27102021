@@ -81,7 +81,7 @@
 	font-size: 1.15 * $base-scale;
 }
 
-@mixin fade-in-loop($box-iteration: 3, $dish-iteration: 3) {
+@mixin fade-in-loop($box-iteration: 3, $dish-iteration: 4) {
 	@for $i from 1 through $box-iteration {
 		&:nth-of-type(#{$i}) {
 			$box-delay: 600ms * $i;
