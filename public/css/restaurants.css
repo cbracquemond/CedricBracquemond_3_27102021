@@ -384,6 +384,51 @@ footer .footer-box .fas {
   grid-row-gap: 1rem;
 }
 
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 1) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 2) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.menu__courses__box:nth-of-type(1) .menu__courses__dish:nth-of-type(1n + 3) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 1) {
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 2) {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+.menu__courses__box:nth-of-type(2) .menu__courses__dish:nth-of-type(1n + 3) {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 1) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 2) {
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms;
+}
+
+.menu__courses__box:nth-of-type(3) .menu__courses__dish:nth-of-type(1n + 3) {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+
 .menu__courses__dish {
   opacity: 0;
   display: -webkit-box;
@@ -397,56 +442,6 @@ footer .footer-box .fas {
           animation: fade-in 2000ms ease-in-out forwards;
   -webkit-box-shadow: 2px 1px 8px -3px #7e7e7e;
           box-shadow: 2px 1px 8px -3px #7e7e7e;
-}
-
-.menu__courses__dish--1 {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.menu__courses__dish--2 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.menu__courses__dish--3 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.menu__courses__dish--4 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.menu__courses__dish--5 {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.menu__courses__dish--6 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.menu__courses__dish--7 {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
-}
-
-.menu__courses__dish--8 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.menu__courses__dish--9 {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
-}
-
-.menu__courses__dish--10 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
 }
 
 .menu__courses__dish:hover .menu__courses__check::after {

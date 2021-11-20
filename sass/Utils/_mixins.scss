@@ -81,10 +81,16 @@
 	font-size: 1.15 * $base-scale;
 }
 
-@mixin fade-in-loop {
-	@for $i from 1 through 10 {
-		&--#{$i} {
-			animation-delay: $i * 100ms;
+@mixin fade-in-loop($dish-iteration: 3) {
+	@for $i from 1 through 3 {
+		&:nth-of-type(#{$i}) {
+			$box-delay: 600ms * $i;
+			@for $j from 1 through $dish-iteration {
+				.menu__courses__dish:nth-of-type(1n + #{$j}) {
+					$dish-delay: 200ms * $j;
+					animation-delay: $box-delay + $dish-delay;
+				}
+			}
 		}
 	}
 }
