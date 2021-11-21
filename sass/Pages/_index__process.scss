@@ -21,6 +21,7 @@
 		cursor: pointer;
 		@include flex-center(flex-start);
 		@include shadow;
+		@include process-icons-loop;
 		@include hover-effect {
 			background-color: scale-color($color-background, $lightness: 50%);
 		}
@@ -48,7 +49,6 @@
 	&__stage {
 		font-weight: bold;
 		@include flex-center;
-		@include process-icons-loop;
 	}
 	& h2 {
 		margin: 1.5 * $base-scale 0;

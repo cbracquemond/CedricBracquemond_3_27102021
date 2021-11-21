@@ -83,7 +83,7 @@
 
 @mixin process-icons-loop {
 	@for $i from 1 through 3 {
-		&:nth-of-type(#{$i})::before {
+		&:nth-of-type(#{$i}) p::before {
 			@include process-icons;
 			@include font-awesome(nth($icons-list, $i));
 			display: block;

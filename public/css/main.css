@@ -527,6 +527,51 @@ footer .footer-box .fas {
           box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
+.process__border:nth-of-type(1) p::before {
+  color: #7e7e7e;
+  margin: 0 1rem;
+  font-size: 1.15rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  display: block;
+}
+
+.process__border:nth-of-type(2) p::before {
+  color: #7e7e7e;
+  margin: 0 1rem;
+  font-size: 1.15rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  display: block;
+}
+
+.process__border:nth-of-type(3) p::before {
+  color: #7e7e7e;
+  margin: 0 1rem;
+  font-size: 1.15rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  display: block;
+}
+
 .process__border:hover {
   -webkit-box-shadow: 2px 1px 8px 3px #9356dc;
           box-shadow: 2px 1px 8px 3px #9356dc;
@@ -576,51 +621,6 @@ footer .footer-box .fas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.process__stage:nth-of-type(1)::before {
-  color: #7e7e7e;
-  margin: 0 1rem;
-  font-size: 1.15rem;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  display: block;
-}
-
-.process__stage:nth-of-type(2)::before {
-  color: #7e7e7e;
-  margin: 0 1rem;
-  font-size: 1.15rem;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  display: block;
-}
-
-.process__stage:nth-of-type(3)::before {
-  color: #7e7e7e;
-  margin: 0 1rem;
-  font-size: 1.15rem;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  display: block;
 }
 
 .process h2 {
