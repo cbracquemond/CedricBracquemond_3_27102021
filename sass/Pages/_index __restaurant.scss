@@ -1,16 +1,16 @@
-.restaurant{
-    background-color: $color-background;
-    padding: 3*$base-scale $base-scale;
-    &__box{
-        width: 100%;
-        display: grid;
-        gap: $base-scale;
-        @include media(tablet-landscape){
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-    }
-    h2 {
-        margin-bottom: 2*$base-scale;
-    }
+.restaurant {
+	background-color: $color-background;
+	padding: 3 * $base-scale $base-scale;
+	&__box {
+		width: 100%;
+		display: grid;
+		gap: $base-scale;
+		@include media(tablet-landscape) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+	}
+	h2 {
+		margin-bottom: 2 * $base-scale;
+	}
 }
