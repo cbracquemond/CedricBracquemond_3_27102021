@@ -1,8 +1,9 @@
-header{
-    width: 100%;
-    padding: $base-scale 0 0.5*$base-scale;
-    position: relative;
-    z-index: 10;
-    @include flex-center;
-    @include shadow;
+header {
+	width: 100%;
+	padding: $base-scale 0 0.5 * $base-scale;
+	position: relative;
+	z-index: 10;
+	@include big-screen-responsive;
+	@include flex-center;
+	@include shadow;
 }

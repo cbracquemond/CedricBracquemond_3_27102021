@@ -11,6 +11,8 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
 		gap: $base-scale;
+		width: 100%;
+		@include big-screen-responsive;
 		@include media(desktop) {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
@@ -70,15 +72,19 @@
 		}
 	}
 	&__name {
-		@include flex-center(space-between);
-		margin-top: 2 * $base-scale;
+		display: flex;
+		width: 100%;
+		@include big-screen-responsive($margin-top: 2 * $base-scale);
+		& h1 {
+			margin-right: auto;
+		}
 	}
 	& h2 {
-		@include flex-column;
 		padding-top: 2 * $base-scale;
 		text-transform: uppercase;
 		font-size: $base-scale;
 		font-weight: 300;
+		@include flex-column;
 		&::after {
 			content: "";
 			margin-top: 0.35 * $base-scale;

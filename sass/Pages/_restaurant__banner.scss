@@ -4,6 +4,7 @@
 	height: 40vh;
 	object-fit: cover;
 	overflow: hidden;
+	// @include big-screen-responsive;
 	@include media(tablet-portrait) {
 		padding-bottom: 0px;
 	}

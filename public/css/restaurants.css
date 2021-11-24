@@ -306,6 +306,8 @@ header {
   padding: 1rem 0 0.5rem;
   position: relative;
   z-index: 10;
+  max-width: 90rem;
+  margin: 0 auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,6 +468,9 @@ footer .cursive {
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto 0;
 }
 
 @media (min-width: 1200px) {
@@ -636,16 +641,20 @@ footer .cursive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 2rem;
+  width: 100%;
+  max-width: 90rem;
+  margin: 2rem auto 0;
+}
+
+.menu__name h1 {
+  margin-right: auto;
 }
 
 .menu h2 {
+  padding-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,10 +662,6 @@ footer .cursive {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 2rem;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 300;
 }
 
 .menu h2::after {
