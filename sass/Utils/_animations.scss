@@ -55,3 +55,21 @@
 		transform: translateY(0);
 	}
 }
+
+@keyframes heart-full {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes heart-hollow {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
