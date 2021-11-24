@@ -1,35 +1,44 @@
-footer{
-    padding: $base-scale;
-    background-color: $color-footer;
-    width: 100%;
-    @include flex-column;
-    & *{
-        color: white;
-        display: inline-flex;
-    }
-.footer-box {
-        @include flex-column;
-        @include media(tablet-portrait){
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        &__link {
-            margin-bottom: 5px;
-            &--utensils::before{
-                width: 1.5*$base-scale;
-                @include font-awesome("\f2e7")
-            }
-            &--hand::before{
-                width: 1.5*$base-scale;
-                @include font-awesome("\f4c4")
-            }
-        }
-        & .fas {
-            flex-direction: row;
-            justify-content: center;
-            font-size: $base-scale;
-            margin-right: 5px;
-            width: $base-scale;
-        }
-    }
+footer {
+	padding: $base-scale;
+	background-color: $color-footer;
+	width: 100%;
+	@include media(desktop) {
+		display: flex;
+	}
+	& * {
+		color: white;
+	}
+	.footer-wrap {
+		@include media(desktop) {
+			@include flex-center;
+		}
+	}
+	.footer-box {
+		width: 100%;
+		@include flex-column;
+		@include media(tablet-landscape) {
+			flex-direction: row;
+		}
+		&__link {
+			margin: 0 $base-scale $base-scale 0;
+			&--utensils::before {
+				width: 1.5 * $base-scale;
+				@include font-awesome("\f2e7");
+			}
+			&--hand::before {
+				width: 1.5 * $base-scale;
+				@include font-awesome("\f4c4");
+			}
+		}
+		& .fas {
+			flex-direction: row;
+			justify-content: center;
+			font-size: $base-scale;
+			margin-right: $base-scale;
+			width: $base-scale;
+		}
+	}
+	.cursive {
+		margin: 0 $base-scale $base-scale 0;
+	}
 }

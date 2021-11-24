@@ -1,11 +1,11 @@
 .process {
 	counter-reset: step;
 	padding: 1.25 * $base-scale $base-scale 2.75 * $base-scale;
-	@include flex-column;
 	&__box {
 		margin-bottom: $base-scale;
 		padding-left: $base-scale;
 		gap: 2 * $base-scale;
+		@include big-screen-responsive;
 		@include flex-column;
 		@include media(tablet-landscape) {
 			flex-direction: row;
@@ -49,6 +49,6 @@
 		@include flex-center;
 	}
 	& h2 {
-		margin: 1.5 * $base-scale 0;
+		@include big-screen-responsive(1.5 * $base-scale, 1.5 * $base-scale);
 	}
 }

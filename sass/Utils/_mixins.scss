@@ -44,6 +44,11 @@
 	}
 }
 
+@mixin big-screen-responsive($margin-top: 0, $margin-bottom: 0) {
+	max-width: 90 * $base-scale;
+	margin: $margin-top auto $margin-bottom;
+}
+
 @mixin shadow($color: $color-icons, $spread: -3px) {
 	box-shadow: 2px 1px 8px $spread $color;
 }
