@@ -57,7 +57,6 @@
 	}
 }
 @mixin heart-values($weight: 900) {
-	transition: all 750ms;
 	font-size: 1.6 * $base-scale;
 	position: absolute;
 	@include font-awesome("\f004", $weight);

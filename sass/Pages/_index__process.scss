@@ -23,11 +23,9 @@
 		@include shadow;
 		@include process-icons-loop;
 		@include hover-effect {
-			background-color: scale-color($color-background, $lightness: 50%);
+			background-color: scale-color($color-primary, $lightness: 90%);
 		}
-		&:hover .process__stage--mobile::before,
-		&:hover .process__stage--bars::before,
-		&:hover .process__stage--store::before {
+		&:hover .process__stage::before {
 			color: $color-primary;
 		}
 		&::before {

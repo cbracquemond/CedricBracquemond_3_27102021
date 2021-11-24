@@ -317,8 +317,6 @@ a {
   background-image: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-transition: all 750ms;
-  transition: all 750ms;
   font-size: 1.6rem;
   position: absolute;
   display: inline-block;
@@ -332,8 +330,6 @@ a {
 }
 
 .heart::before {
-  -webkit-transition: all 750ms;
-  transition: all 750ms;
   font-size: 1.6rem;
   position: absolute;
   display: inline-block;
@@ -622,12 +618,10 @@ footer .footer-box .fas {
   transition: all 200ms;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  background-color: #fbfbfb;
+  background-color: #f4eefc;
 }
 
-.process__border:hover .process__stage--mobile::before,
-.process__border:hover .process__stage--bars::before,
-.process__border:hover .process__stage--store::before {
+.process__border:hover .process__stage::before {
   color: #9356dc;
 }
 
