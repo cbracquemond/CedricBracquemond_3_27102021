@@ -4,7 +4,7 @@
 	&__box {
 		margin-bottom: $base-scale;
 		padding-left: $base-scale;
-		gap: 2 * $base-scale;
+		gap: 1.3 * $base-scale;
 		@include big-screen-responsive;
 		@include flex-column;
 		@include media(tablet-landscape) {
@@ -14,9 +14,9 @@
 	&__border {
 		position: relative;
 		background-color: $color-background;
-		height: 4 * $base-scale;
+		height: 4.5 * $base-scale;
 		width: 100%;
-		border-radius: $base-scale;
+		border-radius: 1.5 * $base-scale;
 		padding: $base-scale;
 		cursor: pointer;
 		@include flex-center(flex-start);

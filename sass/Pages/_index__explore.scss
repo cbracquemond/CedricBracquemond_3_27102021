@@ -1,25 +1,28 @@
-.explore{
-    @include flex-center-column;
-    background-color: $color-background;
-    align-content: center;
-    text-align: center;
-    padding-bottom:3.125*$base-scale;
-    &__location{
-        @include flex-center;
-        background-color: $color-location;
-        color: black;
-        width: 100%;
-        padding: 0.15*$base-scale;
-        font-weight: bold;
-        & p::before{
-            margin-right: $base-scale;
-            @include font-awesome("\f3c5")
-        }
-    }
-    & p{
-        margin: $base-scale;
-    }
-    & h1{
-        margin-top: 40px;
-    }
+.explore {
+	@include flex-center-column;
+	background-color: $color-background;
+	align-content: center;
+	text-align: center;
+	padding-bottom: 3.125 * $base-scale;
+	& p {
+		margin: 0.7 * $base-scale 1 * $base-scale 1.7 * $base-scale;
+	}
+	&__location {
+		@include flex-center;
+		background-color: $color-location;
+		color: black;
+		width: 100%;
+		padding: 0.15 * $base-scale;
+		font-weight: bold;
+		& p {
+			margin: 0.9 * $base-scale 0;
+		}
+		& p::before {
+			margin-right: $base-scale;
+			@include font-awesome("\f3c5");
+		}
+	}
+	& h1 {
+		margin-top: 40px;
+	}
 }

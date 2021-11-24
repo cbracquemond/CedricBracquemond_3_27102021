@@ -1,14 +1,19 @@
-.new{
-    position: relative;
+.new {
+	position: relative;
 }
-.new::before{
-    content: "Nouveau";
-    position: absolute;
-    font-weight: bold;
-    background-color: $color-tertiary;
-    color: scale-color($color-tertiary, $saturation: 0%, $lightness: -64%, $alpha: 1.0);
-    padding: 0.5*$base-scale $base-scale;
-    right: 0px;
-    z-index: 10;
-    margin: $base-scale $base-scale 0 0;
+.new::before {
+	content: "Nouveau";
+	position: absolute;
+	font-weight: bold;
+	background-color: $color-tertiary;
+	color: scale-color(
+		$color-tertiary,
+		$saturation: 0%,
+		$lightness: -50%,
+		$alpha: 1
+	);
+	padding: 0.5 * $base-scale $base-scale;
+	right: 0px;
+	z-index: 10;
+	margin: $base-scale $base-scale 0 0;
 }

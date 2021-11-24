@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-
-
-h1{
-    font-size: 1.5*$base-scale;
+h1 {
+	font-size: 1.5 * $base-scale;
 }
 
-h3{
-    font-size: $base-scale;
-    margin-bottom: 0.15*$base-scale;
+h2 {
+	font-size: $base-scale;
+}
+
+h3 {
+	font-size: 1.2 * $base-scale;
+	margin-bottom: 0.15 * $base-scale;
 }

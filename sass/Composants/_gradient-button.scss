@@ -1,17 +1,17 @@
-.gradient-button{
-    all:unset;
-    color: white;
-    background: #9356DC;
-    background: linear-gradient(346deg, #9356DC 0%, #FF79DA 100%);
-    cursor: pointer;
-    border-radius: 2*$base-scale;
-    padding: $base-scale 1.5*$base-scale;
-    @include shadow;
-    @include hover-effect;
-    &--menu{
-        justify-content: center;
-        margin: 4*$base-scale auto;
-        width: auto;
-    }
-
+.gradient-button {
+	all: unset;
+	color: white;
+	background: #9356dc;
+	background: linear-gradient(346deg, #9356dc 0%, #ff79da 100%);
+	cursor: pointer;
+	border-radius: 2 * $base-scale;
+	padding: $base-scale 1.5 * $base-scale;
+	@include shadow($color: rgba(0, 0, 0, 0.25), $spread: -9px);
+	@include hover-effect;
+	&--menu {
+		justify-content: center;
+		margin: 4 * $base-scale auto;
+		width: 8 * $base-scale;
+		text-align: center;
+	}
 }

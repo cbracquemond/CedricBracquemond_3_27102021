@@ -19,7 +19,7 @@
 		&__box {
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: repeat(5, 1fr);
+			grid-template-rows: repeat(3, 1fr);
 			column-gap: 0px;
 			row-gap: $base-scale;
 			@include fade-in-loop;
@@ -75,9 +75,9 @@
 	}
 	& h2 {
 		@include flex-column;
-		padding-top: 2.5 * $base-scale;
+		padding-top: 2 * $base-scale;
 		text-transform: uppercase;
-		font-size: 1.25 * $base-scale;
+		font-size: $base-scale;
 		font-weight: 300;
 		&::after {
 			content: "";

@@ -49,13 +49,13 @@
 	margin: $margin-top auto $margin-bottom;
 }
 
-@mixin shadow($color: $color-icons, $spread: -3px) {
-	box-shadow: 2px 1px 8px $spread $color;
+@mixin shadow($color: rgba(0, 0, 0, 0.11), $spread: -7px) {
+	box-shadow: 0px 13px 15px $spread $color;
 }
 
 @mixin hover-effect {
 	&:hover {
-		@include shadow($color-primary, 3px);
+		@include shadow($color: scale-color($color-primary, $lightness: 60%));
 		transition: all 200ms;
 		transform: scale(1.02);
 		@content;
