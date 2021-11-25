@@ -7,18 +7,15 @@
 	margin-top: -3 * $base-scale;
 	@include flex-column;
 	&__courses {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, 1fr);
+		gap: $base-scales;
 		width: 100%;
 		@include big-screen-responsive;
 		@include media(desktop) {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: 1fr;
-			column-gap: $base-scale;
+			display: flex;
+			flex-direction: row;
 		}
 		&__box {
+			width: 100%;
 			min-width: 0;
 			@include fade-in-loop;
 		}
