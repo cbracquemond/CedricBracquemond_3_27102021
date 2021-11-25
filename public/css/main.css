@@ -265,6 +265,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 11rem;
+  height: 100%;
   width: 100%;
 }
 

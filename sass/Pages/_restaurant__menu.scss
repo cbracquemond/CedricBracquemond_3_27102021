@@ -10,26 +10,23 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
-		gap: $base-scale;
 		width: 100%;
 		@include big-screen-responsive;
 		@include media(desktop) {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: 1fr;
+			column-gap: $base-scale;
 		}
 		&__box {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: repeat(3, 1fr);
-			column-gap: 0px;
-			row-gap: $base-scale;
+			min-width: 0;
 			@include fade-in-loop;
 		}
 		&__dish {
 			opacity: 0;
 			display: flex;
 			background-color: white;
+			margin-top: $base-scale;
 			border-radius: $base-scale;
 			overflow: hidden;
 			cursor: pointer;
