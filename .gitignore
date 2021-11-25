@@ -1,3 +1,4 @@
 *.pdf
 Maquettes Ohmyfood
 .prettierrc.json
+.vscode
